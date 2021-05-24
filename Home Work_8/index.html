@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 8</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .background-image {
+        background-image: url("img/bg_b1.png");
+        width: 100%;
+        background-size: cover;
+        padding: 200px 0px;
+    }
+
+    .left-content {
+        width: 50%;
+        float: left;
+    }
+    .left-content h1 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+    }
+    .left-content p {
+        text-transform: lowercase;
+        text-indent: 20px;
+        color: #fff;
+    }
+    .right-form {
+        width: 50%;
+        float: right;
+        text-align: center;
+    }
+  input {
+      width: 100%;
+  }
+ 
+</style>
+<body>
+    <div class="background-image">
+        <div class="left-content box">
+            <h1>What's New With Burning Man?</h1>
+            <p>We have had to adapt to the twists and turns of a global crisis, complex public health information, and the growing hope that we can start rebuilding our lives together soon. We have decided to set our sights on Black Rock City 2022. We have the time now to imagine what we can bring to BRC 2022 that will really make a difference.</p>
+
+        </div>
+        <div class="right-form box">
+            <form action="/action.php" id="form" name="form"></form>
+            <p><input type="text" class="input name_input" name="name" id="name" maxlength="20" requier placeholder="Your name"/></p>
+            <p><input type="tel" class="input name_input" name="tel" id="tel" maxlength="20" requier placeholder="Your phone"/> </p>
+            <p><textarea class="textarea" name="textarea" id="textarea" cols="40" rows="7" maxlength="0" placeholder="Send your massage"></textarea></p>
+            <p><button type="button" class="button">Send</button></p>
+    </div>
+    </div>
+</body>
+</html>
