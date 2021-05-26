@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 6</title>
+</head>
+<style>
+   body {
+    background-image: url(Screen-Background/Background.jpeg);
+    background-size: cover; 
+   }
+    form {
+    margin: 100px;
+    padding: 50px;
+    text-align:center;
+    float: right;
+    border: double gold;
+    width: 500px;
+    height: 600px;
+     }
+    button {
+    background: rgb(147, 156, 151);
+    width: 60%;
+    }
+   </style>
+<body>
+    <form action="/action.php" id="form" name="form">
+        <h1>Крутые проекты начинаются с заполнения этой формы</h1>
+        <p><input type="text" class="input name_input" name="name" id="name" maxlength="20" requier placeholder="Ваше имя"/></p>
+        <p><input type="text" class="input name_input" name="Last_name" id="Last_name" maxlength="20" required placeholder="Ваша Фамилия"/></p>
+        <p><input type="tel" class="input name_input" name="tel" id="tel" maxlength="20" requier placeholder="Ваш номер телефона"/> </p>
+        <p><input type="email" class="input name_input" name="email" id="email" maxlength="20" placeholder="Ваш email"/> </p>
+        <p><textarea class="textarea" name="textarea" id="textarea" cols="40" rows="7" maxlength="300" placeholder="Расскажите о своей идее здесь!"></textarea></p>
+        <p><b>Заказать разработку:</b></p>
+        <p><select class="list" name="select" id="list">
+            <option value="Option1">Создание Landing page</option>
+            <option value="Option2">Многостраничные сайты</option>
+            <option value="Option3">Интернет-магазины</option>
+            <option value="Option4">Разработка на Тильда</option>
+        </select></p>
+        <p><button type="button" class="button">Отправить</button></p>
+        <p><b>Отвечаем быстро!</b></p>
+    </form>
+</body>
+</html>
