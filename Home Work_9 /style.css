@@ -1,0 +1,23 @@
+.nav ul.menu {
+    background-color: #806DA5;
+}
+.nav ul.menu li a:hover {
+    background: #e6be33;
+}
+.nav ul.menu li ul.project-menu {
+    background: #D793D9;
+}
+.nav ul.menu li ul.project-menu li a:hover {
+    background: #4dd200;
+
+}
+.nav ul.menu li ul.tech-menu {
+    background: #f8beed;
+}
+.nav ul.menu li ul.tech-menu li a:hover{
+    background: #fff126;
+
+}
+.nav ul.menu li ul.tech-menu a {
+    color: #007fff;
+}
