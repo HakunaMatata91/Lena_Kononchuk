@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 999;
+    background-color: #78767b;
+}
+/*header*/
+.popup{
+    position: absolute;
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: -165px;
+    height: 420px;
+    width: 330px;
+    padding: 10px;
+}
+
+.popup input {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    border: inset darkcyan;
+    border-radius: 7px;
+   
+}
+.close {
+    position: absolute;
+    z-index: 99999;
+    cursor: pointer;
+    color: #a10c28;
+    top: 7px;
+    right: 7px;
+    
+    font-weight: bold;
+}
+.close:hover {
+    color: #140f07;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    color: #a10c28;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.button {
+    display: block;
+    width: 220px;
+    height: 40px;
+    border: 5px ridge #a10c28;
+    background-color: darkcyan;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin: 10px auto;
+}
+
+.button:hover {
+    background-color: #82877b;
+}
+
+    
