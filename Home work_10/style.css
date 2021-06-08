@@ -16,7 +16,7 @@
 }
 /*header*/
 .popup{
-    position: absolute;
+    position: relative;
     background-color: darkcyan;
     border: 1px solid darkcyan;
     z-index: 9999;
