@@ -30,7 +30,7 @@ body{
     padding-top: 20px;
     background:#ffffff;
 }
-.conteiner {
+.container {
     width: 1170px;
     margin: 0 auto;
 }
@@ -65,7 +65,7 @@ clear: both;
 }
 .nav {
 background: #031A53;
-margin top: 15px;
+margin-top: 15px;
 }
 .nav ul.menu {
     list-style: none;
@@ -175,10 +175,9 @@ margin top: 15px;
     padding-left: 300px;
 }
 .aside{
-    width: 770px;
+    width: 500px;
     float: left;
     box-sizing: border-box;
-    padding: 20px;
     text-align: center;
     
 }
@@ -187,7 +186,7 @@ margin top: 15px;
     float: left;
     box-sizing: border-box;
     font-weight: bold;
-    padding: 20px;
+    
 }
 .sidebar ul.sidebar_menu{
     text-align: center;
