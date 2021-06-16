@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.button{
+    border: solid 1px #1c0019;
+    background: #291d06;
+    color: #fffaf2;
+    text-align: center;
+	text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    transition: 1s; 
+}
+
+.button:hover{
+    border-radius: 8px; 
+    background: #e2e2e2;
+    color: black;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    position: relative;
+    background-color: transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #950090;
+    animation-name: triangle;
+    animation-duration: 5s;
+    animation-iteration-count: 8;
+}
+@keyframes triangle{
+    from{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 600px;
+        opacity: 0.2;
+        border-color: #08afff transparent;
+    }
+    50%{
+        top: 600px;
+        left: 600px;
+        opacity: 0.6;
+        border-color: #62ca24 transparent;
+    }
+    75%{
+        top: 600px;
+        left: 0;
+        opacity: 0.8;
+        border-color: #e31730 transparent;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
