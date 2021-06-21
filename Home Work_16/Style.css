@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*1 animation*/
+.coffee{
+    width: 204px; 
+    height: 509px;
+    background-image: url("img/doodle-sprite.png");
+    margin: 0 auto;
+    animation: coffee 1s steps(10) infinite;
+    -webkit-animation: coffee 1s steps(10) infinite;
+    -o-animation: coffee 1s steps(10) infinite;
+    -moz-animation: coffee 1s steps(10) infinite;
+}
+@keyframes coffee{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -2000px;
+
+    }
+}
+@-webkit-keyframes  {
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -2000px;
+
+    }
+}
+@-o-keyframes{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -2000px;
+
+    }
+}
+@-moz-keyframes{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -2000px;
+
+    }
+}
+/*2 animation*/
+.smurf{
+    width: 63px; 
+    height: 113px;
+    background-image: url("img/smurf.png");
+    margin: 0 auto;
+    margin-top: 10px;
+    animation: smurf 0.8s steps(16) infinite;
+    -webkit-animation: smurf 0.8s steps(16) infinite;
+    -o-animation: smurf 0.8s steps(16) infinite;
+    -moz-animation: smurf 0.8s steps(16) infinite;
+}
+@keyframes smurf{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -1024px;
+
+    }
+}
+@-webkit-keyframes  {
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -1024px;
+
+    }
+}
+@-o-keyframes{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -1024px;
+
+    }
+}
+@-moz-keyframes{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -1024px;
+
+    }
+}
