@@ -4,6 +4,10 @@ jQuery(document).ready(function () {
 
     'use strict';
 
+	jQuery(document).ready(function(){
+		jQuery(".fancybox").fancybox();
+	});
+
 	var slid = jQuery('#slider-baner');
 		
 	slid.owlCarousel({
