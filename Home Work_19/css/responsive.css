@@ -5,6 +5,9 @@
 
 }
 @media (max-width: 1199px) {
+    .review_carousel_owl {
+        width: 100%;
+    }
     .galery .fancybox{
         width: 33.3333333%;
     }
@@ -12,6 +15,7 @@
 }
 
 @media (max-width: 991px) {
+  
     .bg_review_carousel{
         display: none;
     }
@@ -48,6 +52,12 @@
 }
 
 @media (max-width: 767px) {
+    .footer{
+        height: auto;
+    }
+    .box{
+        padding-bottom: 20px;
+    }
     .team-box{
         max-width: 400px;
         margin: 0 auto;
@@ -108,5 +118,5 @@
         font-size: 25px;
         line-height: 31px;
     }
-     
+   
 }

@@ -171,6 +171,7 @@ header{
 .social-team{
     margin-top: 29px;
     display: flex;
+
 }
 .social-team a{
     display: block; 
@@ -204,11 +205,13 @@ header{
     height: 700px;
     background-size: cover;
     background-position: top right;
+   
 }
 .review_carousel_owl{
     width: 50%;
     background: #53354a;
     padding: 94px 82px;
+    height: auto;
 }
 .owl_carousel_text{
     font-family: 'cardoitalic';
@@ -216,8 +219,13 @@ header{
     color: #fff;
     line-height: 47px;
     max-width: 505px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
+}
+.owl_carousel_text_name{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
 }
 #review-carousel .owl-dots{
     display: flex;
@@ -239,7 +247,6 @@ header{
 #review-carousel .owl-dots .owl-dot span:hover,
 #review-carousel .owl-dots .owl-dot.active span{
     background: #fff;
-
 }
 
 .parent_download{
@@ -254,7 +261,10 @@ header{
 .download .parent_download p{
     padding-top: 13px;
     font-family: 'ralewaybold';
+    color: #2d3033;
+    font-size: 13px;
     margin-top: 15px;
+    text-transform: uppercase;
 
 }
 .btn{
@@ -288,20 +298,22 @@ footer {
     color: #fff;
     height: 250px;
 }
-.box{
+.box h3{
     background: #3a3e64;
     font-family: 'ralewaybold';
     font-size: 14px;
     color: #fff;
     margin-top: 72px;
     text-align: center;
+    text-transform: uppercase;
 }
 .text-box{
     font-family: 'ralewayregular';
     color: #8c8ea0;
     margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
 }
-
 .social_icons{
     margin-top: 29px;
     display: flex;
@@ -314,25 +326,35 @@ footer {
 .social_icons a i{
     color: #fff;
     font-size: 22px;
-    display: block;
     width: 40px;
     height: 40px;
-    border: solid 1px #c6cacc;
+    border: solid 2px #fff;
     box-sizing: border-box;
     padding-top: 8px;
     text-align: center;
     transition: all 0.7s;
     margin-right: 5px;
+    text-decoration: none;
 }
- .text_footer .text_box_footer h3{
-     font-family: 'ralewayregular';
-     font-size: 14px;
-     color: #8c8ea0;
-     text-align: center;
+.social_icons a i:hover{
+    color: #087cc2;
+    border: solid 2px #087cc2;
+}
+ .text_footer {
      width: 100%;
      background: #313454;
-     height: 90px;
+     height: 92px;
  }
+ .text_box_footer p{
+    font-family: 'ralewayregular';
+    font-size: 14px;
+    color: #8c8ea0;
+    text-align: center;
+    margin-top: 25px;
+
+ }
+
+
 
     
     /*font-family: 'open_sansbold';
