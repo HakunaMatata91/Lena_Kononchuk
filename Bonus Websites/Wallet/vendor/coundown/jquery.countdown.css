@@ -1,0 +1,93 @@
+.countdownHolder{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.position{
+	display: inline-block;
+	height: 53px;
+	overflow: hidden;
+	position: relative;
+	width: 19px;
+	text-align: center;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width: 16px;
+	text-align:center;
+	color:#fff;
+	font-family: 'Conv_HelveticaNeueCyr-Bold';
+    font-size: 35px;
+	border-radius: 2px;
+	height: 45px;
+	margin-top: 4px;
+}
+
+.digit.static{
+}
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{display: block;}
+.countDiv0, .countDiv1, .countDiv2{display: none !important;}
+.countHours{}
+.countMinutes{}
+.countSeconds{}
+.countDays,.countHours,.countMinutes,.countSeconds{
+	display: inline-block;
+	margin: 10px 5px;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	background: #ff0000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff0000 0%, #d20000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0000), color-stop(100%,#d20000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff0000 0%,#d20000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff0000 0%,#d20000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff0000 0%,#d20000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff0000 0%,#d20000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#d20000',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.countDays p,.countHours p,.countMinutes p,.countSeconds p{
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	font-size: 14px;
+	color: #fff;
+	position: relative;
+	bottom: 12px;
+}
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background:#504250;
+	border-radius: 50%;
+	left:50%;
+	margin-left:-3px;
+	top:-45px;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:-25px;
+}
