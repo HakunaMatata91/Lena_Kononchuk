@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+@media (min-width: 1200px){
+    .for_page .container {
+        max-width: 1030px;
+    }
+    }
+    
+@media(max-width: 1199px){
+    .nav-menu ul.sub-menu li a button {
+     font-size: 14px;
+        }
+    .info-cont .telephone {
+      font-size: 19px;
+        }
+    }
+@media(max-width: 991px){
+    .nav-menu{
+        display: none;
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 40px;
+        }
+    .nav-menu ul.sub-menu li a button:hover {
+        color:aqua;
+    }
+    .nav-menu ul.sub-menu li a button {
+        font-size: 16px;
+        color: #000;
+                padding-bottom: 6px;
+    }
+    .nav-menu ul.sub-menu {
+        display: block;
+        }
+    .responsive-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .responsive-nav-name{
+        font-family: 'Conv_HelveticaNeueCyr-Roman';
+        font-size: 24px;
+        color: #fff;
+        }
+    .icon-humburher i{
+        color: #fff;
+        font-size: 24px;
+        transition: 0.7;
+        cursor: pointer;
+        }
+    .icon-humburher i:hover{
+        color: #4FB1E5;
+        }
+    .closed{
+        display: block;
+        position: absolute;
+        right: 33px;
+        top: 20px;
+            
+        }
+    .closed i{
+        cursor: pointer;
+        font-size: 24px;
+        transition: 0.7s;
+        }
+    .closed i:hover{
+            color: aqua;
+        }
+    .artical {
+        display: none;
+        }
+    .info-cont {
+        line-height: 17px;
+        margin-left: 0;
+        }
+    .block2 h1 {
+        font-size: 25px;
+        margin-top: 15px;
+        }
+    .sale {
+        font-size: 19px;
+        }
+    .sale_prise_parent {
+        padding-top: 6px;
+        }
+    .bg-lapsharezka{
+        background: url("../images/bg-911.png") no-repeat;
+        background-repeat: no-repeat;
+        padding-bottom: 80px;
+        background-position: center;
+        }
+    .form-counter {
+        margin-right: 2px;
+        padding-top: 12px;
+        }
+    .countdown .countSeconds, 
+    .countdown .countDays, 
+    .countdown .countMinutes, 
+    .countdown .countHours {
+        width: 55px;
+        height: 55px;
+        padding: 2px;
+        }   
+    .countdown .countSeconds  .digit , 
+    .countdown .countDays  .digit , 
+    .countdown .countMinutes .digit , 
+    .countdown .countHours  .digit {
+        width: 12px;;
+        font-size: 29px;
+        height: 40px;
+        margin-top: 2px;
+        margin-left: 2px;
+        }
+    .countdown  .countDays p,
+    .countdown  .countHours p,
+    .countdown  .countMinutes p,
+    .countdown  .countSeconds p {
+        font-size: 12px;
+        }
+    #countdown .position {
+        font-size: 36px;
+        height: 38px;
+        width: 16px;
+        }
+    .sale_prise_new {
+        font-size: 24px;
+        color: #639300;
+        }
+    .sale_prise_old {
+        font-size: 17px;
+     }
+    .parent-form-box{
+        width: 250px;
+        height: 350px;
+        background: inherit;	
+    }
+    .form-box input {
+        margin-bottom: 13px;
+        padding: 7px;
+        font-size: 14px;
+       border: 1px solid #639300;
+    }
+    .submit input {
+        padding: 5px;
+        font-size: 19px;
+    }
+    .block-bg h2 {
+        font-size: 19px;
+        }
+    .about-product h2 {
+        font-size: 24px;
+        padding-top: 20px;
+        }
+    .menu-parents {
+        justify-content: space-around;
+        padding: 12px 0 17px 0;
+        }
+    .about-product p {
+       font-size: 14px;
+       padding-top: 11px;
+    }
+    .block4 p {
+        font-size: 14px;
+    }
+    .block4 .rolling-box-text p {
+        text-align: justify;
+    }
+    .block4 h2 {
+        margin-top: 4px;
+        margin-bottom: 14px;
+    }
+    .rolling-box-img {
+        padding-top: 30px;
+    }
+    .cutting-box-text p {
+        padding-bottom: 17px;
+    }
+    .block5 h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .block5 p {
+        font-size: 14px;
+        text-indent: 0;
+        padding-top: 10px;
+    }
+    .care-list .list ul li {
+        font-size: 14px;
+        padding-top: 6px;
+    }
+    .block6 h2 {
+        font-size: 24px;
+        padding-top: 27px;
+    }
+    .parent-img-cook{
+        display: none;
+    }
+    .reviews-box {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .reviews-box-img {
+        padding-bottom: 4px;
+    }
+    .reviews-box-text h2{
+        font-size: 17px;
+        padding-top: 10px;
+    }
+    .reviews-box-text p {
+        font-size: 14px;
+    }
+    .block7 h2 {
+        font-size: 25px;
+        margin-top: 15px;
+        }
+    #countdown2 .position {
+        font-size: 36px;
+        height: 38px;
+        width: 16px;
+            }
+    .text-footer {
+        padding-bottom: 20px;
+    }    
+    .text-footer p {
+        font-size: 15px;
+    } 
+    .menu-police ul.about-menu li a button:focus, 
+    .menu-police ul.about-menu li a button {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+}
+    @media(max-width: 767px){
+    .responsive-nav-name {
+        font-size: 20px;
+        }
+    .icon-humburher i {
+        font-size: 21px;
+        }
+    .sale {
+        font-size: 17px;
+        padding-left: 10px;
+        padding-top: 80px;
+        }
+    .info-cont .telephone {
+        font-size: 16px;
+        }
+    .info-cont .time-tel {
+        font-size: 12px;
+        }
+    .block2 h1 {
+        font-size: 18px;
+        margin-top: 6px;
+        font-weight: bold;
+        }
+    .sale_prise_new {
+        font-size: 18px;
+        }
+    .submit input {
+        padding: 5px;
+        font-size: 14px;
+        }
+    .about-product h2 {
+        font-size: 21px;
+        }
+    
+    .block4 p {
+        font-size: 14px;
+        }
+    .rolling-box-text{
+        display: none;
+    }
+    .cutting-box-text{
+        display: none;
+    }
+    .care-list .list ul li {
+        font-size: 14px;
+        padding-top: 10px;
+        margin-left: 8px;
+    }
+    .list ul {
+        list-style: none;
+    }
+
+    .list ul li:before {
+        content: '✓';
+        color: #639300;
+        margin-right: 4px;
+      }
+      .block5 h2 {
+        font-size: 23px;
+        margin-top: 25px;
+    }
+    .block5 p {
+        font-size: 13px;
+    }
+    .block6 h2 {
+        font-size: 24px;
+        padding-top: 22px;
+    }
+    .reviews-box-text h2{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .reviews-box-text p {
+        font-size: 13px;
+    }
+    .block7 h2 {
+        font-size: 18px;
+        margin-top: 6px;
+        font-weight: bold;
+        }
+    .menu-police ul.about-menu li a button:focus, 
+    .menu-police ul.about-menu li a button {
+        font-size: 15px;
+        margin-right: 10px;
+        }
+    .text-footer p {
+        font-size: 14px;
+        }
+        
+    }
+    @media(max-width: 600px){
+    .block2 h1 {
+        font-size: 16px;
+        }
+    .block-bg h2 {
+        font-size: 16px;
+        }
+    .about-product h2 {
+        font-size: 20px;
+        }
+    .block5 h2 {
+       font-size: 20px;
+        margin-top: 22px;
+        }
+    .block6 h2 {
+        font-size: 20px;
+        padding-top: 19px;
+        }
+    .reviews-box-text h2{
+        font-size: 13px;
+        padding-top: 10px;
+        }
+        
+    }
+    @media(max-width: 500px){
+        
+    }
+    @media(max-width: 470px){
+        
+    }
+    @media(max-width: 400px){
+    .responsive-nav-name {
+        font-size: 17px;
+        padding-top: 10px;
+        }
+    .icon-humburher i {
+        font-size: 15px;
+        padding-top: 10px;
+        }
+    .closed i {
+       font-size: 13px;
+    }
+    .block2 h1 {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .form-counter {
+        justify-content: center;
+    }
+    .block-bg h2 {
+        font-size: 14px;
+    }
+    .about-product h2 {
+        font-size: 16px;
+    }
+    .block4 h2 {
+        font-size: 21px; 
+    }
+    .block5 h2 {
+        font-size: 17px;
+    }
+    .reviews-box-text h2 {
+        font-size: 11px;
+        padding-top: 8px;
+    }
+    .reviews-box-text p {
+        font-size: 11px;
+    }
+    .block7 h2 {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .menu-police ul.about-menu li a button:focus, 
+    .menu-police ul.about-menu li a button {
+        font-size: 12px;
+        margin-right: 9px;
+    }
+    .text-footer {
+        padding-bottom: 12px;
+    }
+    .text-footer p {
+        font-size: 11px;
+    }
+    .info-cont .telephone {
+        font-size: 13px;
+    }
+    .info-cont .time-tel {
+        font-size: 10px;
+    }
+    
+        
+    }
+/* CSS Document */
+
