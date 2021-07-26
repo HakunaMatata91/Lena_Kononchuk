@@ -18,24 +18,27 @@
     .nav-menu{
         display: none;
         position: fixed;
-        background: #fff;
+        background: #e2e2e2;
         width: 100%;
-        height: 100%;
+        height: 40%;
         left: 0;
         top: 0;
-        padding: 40px;
+        padding: 20px;
+        z-index: 10;
+        text-align: center;
         }
     .nav-menu ul.sub-menu li a button:hover {
-        color:aqua;
+        color:#639300;
     }
     .nav-menu ul.sub-menu li a button {
         font-size: 16px;
         color: #000;
-                padding-bottom: 6px;
+        padding-bottom: 6px;
     }
     .nav-menu ul.sub-menu {
         display: block;
         }
+
     .responsive-nav {
         display: flex;
         justify-content: space-between;
@@ -55,7 +58,7 @@
     .icon-humburher i:hover{
         color: #4FB1E5;
         }
-    .closed{
+    .nav-menu .closed{
         display: block;
         position: absolute;
         right: 33px;
@@ -68,7 +71,7 @@
         transition: 0.7s;
         }
     .closed i:hover{
-            color: aqua;
+        color: aqua;
         }
     .artical {
         display: none;
@@ -226,7 +229,7 @@
         padding-bottom: 20px;
     }    
     .text-footer p {
-        font-size: 15px;
+        font-size: 14px;
     } 
     .menu-police ul.about-menu li a button:focus, 
     .menu-police ul.about-menu li a button {
@@ -317,17 +320,42 @@
         }
     .menu-police ul.about-menu li a button:focus, 
     .menu-police ul.about-menu li a button {
-        font-size: 15px;
+        font-size: 14px;
         margin-right: 10px;
         }
-    .text-footer p {
+    .text-footer {
+        font-size: 14px;
+        }
+    .nav-menu ul.sub-menu li a button {
         font-size: 14px;
         }
         
     }
     @media(max-width: 600px){
+    .parent-form-box{
+        width:80%;
+        height: 80%;
+        background: inherit;
+        }
+    .form-counter{
+        justify-content: center;
+        margin-top: -50px;
+            }
+    .sale {
+        text-align: center;
+            }
+    .sale_prise_parent {
+        justify-content: center;
+            }
+    #countdown {
+       justify-content: space-evenly;
+            }
+    #countdown2 {
+        justify-content: space-evenly;
+            }
+     
     .block2 h1 {
-        font-size: 16px;
+        font-size: 18px;
         }
     .block-bg h2 {
         font-size: 16px;
@@ -346,8 +374,7 @@
     .reviews-box-text h2{
         font-size: 13px;
         padding-top: 10px;
-        }
-        
+        } 
     }
     @media(max-width: 500px){
         
@@ -401,14 +428,12 @@
     }
     .menu-police ul.about-menu li a button:focus, 
     .menu-police ul.about-menu li a button {
-        font-size: 12px;
+        font-size: 13px;
         margin-right: 9px;
-    }
-    .text-footer {
-        padding-bottom: 12px;
-    }
+        }
     .text-footer p {
-        font-size: 11px;
+        font-size: 12px;
+        padding-bottom: 10px;
     }
     .info-cont .telephone {
         font-size: 13px;
@@ -417,7 +442,7 @@
         font-size: 10px;
     }
     
-        
+   
     }
 /* CSS Document */
 

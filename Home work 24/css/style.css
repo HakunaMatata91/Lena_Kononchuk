@@ -4,12 +4,10 @@
 }
 body,
 html{
-    height: 100%;
 }
 .for_page{
-	position: relative;
-	min-height: 100%;
-	}
+
+}
 .page{
 	
 }
@@ -90,7 +88,7 @@ img{
 	font-size: 14px;
 	color: #fff;
 }
-.closed{
+.nav-menu .closed{
 	display: none;
 }
 .block2 {
@@ -371,6 +369,7 @@ img{
 	text-decoration: underline;
 	color: #ff8600;
 	margin-right:  20px;
+	outline: none;
 }
 .privacy-policy .about-menu {
 	list-style: none;
@@ -385,7 +384,8 @@ img{
 	font-family: 'helveticaneuecyrlight';
 	font-size: 18px;
 	color: #605c64;
-	line-height: 0.5;
+	margin-top: 1em;
+    margin-bottom: -1em;
 }
 
 .modal-content{
