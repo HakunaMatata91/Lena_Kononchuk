@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work If/else</title>
+</head>
+
+<body>
+</body>
+<script>
+    // 1) Получить максимальное число и вывести через prompt( "<" ">" - через alert вывести ошибку
+    let maxSum = Math.max(10, 36, 66, 99, 44);
+    let sum = prompt('Enter your number here', '');
+
+    if (sum == maxSum) {
+        alert('This is right number');
+    } else if (sum >= maxSum) {
+        alert('Are too few, try again');
+    } else if (sum <= maxSum) {
+        alert('Too much, try again');
+    }
+
+    // 2) Switch: case 5 цветов, правильный цвет alert(верно), если цвета нет, то alert(Цвета нет).
+
+    let color = prompt('Select', '');
+
+    switch (color) {
+        case 'Orange':
+            alert('Orange, this is right color');
+            break;
+
+        case 'Purple':
+            alert('Purple, this is right color');
+            break;
+
+        case 'Magenta':
+            alert('Magenta, this is right color');
+            break;
+
+        case 'Beige':
+            alert('Beige, this is right color');
+            break;
+
+        case 'Mahogany':
+            alert('Mahogany, this is right color');
+            break;
+
+        default:
+            alert('No color definition, try again');
+    }
+    // 3) 5 вывести через if/else
+
+    let color2 = prompt("Select a color", "");
+
+    if (color2 == 'Orange') {
+        alert('Orange, this is right color');
+    } else if (color2 == 'Purple') {
+        alert('Purple, this is right color');
+    } else if (color2 == 'Magenta') {
+        alert('Magenta, this is right color');
+    } else if (color2 == 'Beige') {
+        alert('Beige, this is right color');
+    } else if (color2 == 'Mahogany') {
+        alert('Mahogany, this is right color');
+    } else {
+        alert('No color definition, try again');
+    }
+
+</script>
+
+</html>

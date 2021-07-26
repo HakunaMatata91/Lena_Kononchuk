@@ -5,90 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home work 23</title>
+    <title>Home work - Button</title>
 </head>
 <style>
+     /*Изменить текст кнопки с помощью CSS*/
     button {
-        text-transform: uppercase;
-        visibility: hidden;
+        font-size: 0;
+        padding: 0;
+        border: inherit;
     }
+
     button:after {
         content: 'Узнать больше';
-        visibility: visible;
         display: block;
-        position: absolute;
-        border: 1px solid #132c06;
-        background-color: #ffea44;
-        padding: 5px;
-        top: 20px;
-        left: 20px;
+        border: 1px solid #0657dc;
+        background-color: #add9ff;
+        width: 200px;
+        font-weight: bolder;
+        font-size: 17px;
+        color: #3d0f03;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
     }
 </style>
 
 <body>
-    <div class="parent_buttom">
+    <body>
         <button>Send</button>
-    </div>
+    </body>
 </body>
-<script>
-    // 1) Получить максимальное число и вывести через prompt( "<" ">" - через alert вывести ошибку)
-    let maxSum = Math.max(101, 136, 66, 99, 144);
-    sum = prompt("Enter your number here", "");
-
-    if (sum == maxSum) {
-        alert("Yes, this is right");
-    } else if (sum < 144) {
-        alert("Are too few, try again");
-    } else if (sum > 144) {
-        alert("Too much, try again");
-    }
-
-    //  2) Switch: case 5 цветов, правильный цвет alert(верно), если цвета нет, то alert(Цвета нет).
-
-    let color = prompt('Select', ''); 
-    
-    switch (color) {
-        case 'Orange':
-            alert('Orange, this is right color');
-            break;
-
-        case 'Purple':
-            alert('Purple, this is right color');
-            break;
-
-        case 'Magenta':
-            alert('Magenta, this is right color');
-            break;
-
-        case 'Beige':
-            alert('Beige, this is right color');
-            break;
-
-        case 'Mahogany':
-            alert('Mahogany, this is right color');
-            break;
-
-        default:
-            alert('No color definition, try again');
-    }
-
-    // 3) 5 вывести через if/else
-
-    let color = prompt("Select a color", "");
-
-    if (color == 'Orange') {
-        alert('Orange, this is right color');
-    } else if (color == 'Purple') {
-        alert('Purple, this is right color');
-    } else if (color == 'Magenta') {
-        alert('Magenta, this is right color');
-    } else if (color == 'Beige') {
-        alert('Beige, this is right color');
-    } else if (color == 'Mahogany') {
-        alert('Mahogany, this is right color');
-    } else {
-        alert('No color definition, try again');
-    }
-</script>
 
 </html>
