@@ -21,6 +21,9 @@ footer {
     width: 100%;
     min-height: 113px;
 }
+.closed{
+    display: none;
+}
 .responsive-nav{
 	display: none;
 }
