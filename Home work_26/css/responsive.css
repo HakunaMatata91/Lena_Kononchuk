@@ -1,0 +1,380 @@
+/* CSS Document */
+
+@media (min-width: 1200px){
+    .for_page .container {
+        max-width: 998px;
+    }
+    }
+@media(max-width: 1199px){
+    .nav-menu .item-menu a {
+        font-size: 13px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    .about-heading::after {
+        width: 290px;
+    }
+  
+    .parent {
+        padding-top: 23px;
+     
+    }
+    .services::after {
+        width: 207px;
+    }
+    .support::after {
+        width: 153px;
+    }
+    .team-text p {
+        font-size: 10px;
+    }
+    .clients::after {
+        width: 826px;
+    }
+    .social-box-parent1 .fab {
+        margin-right: 10px;
+        
+    }
+}
+
+@media(max-width: 991px){ 
+    .nav-menu{
+        display: block;
+        position: fixed;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        z-index: 10;
+        text-align: center;
+        }
+        .nav-menu ul.menu {
+            display: block;
+            }
+    
+        .responsive-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+        }
+        .responsive-nav-name{
+            font-family: 'Conv_HelveticaNeueCyr-Roman';
+            font-size: 20px;
+            color:  #7e7e7e;
+            }
+        .icon-humburher i{
+            color: #333;
+            font-size: 20px;
+            transition: 0.7;
+            cursor: pointer;
+            }
+        .icon-humburher i:hover{
+            color: #29c5e6;
+            }
+            .nav-menu .closed {
+                display: block;
+                position: absolute;
+                right: 35px;
+                top: 20px;
+            }
+        .closed i{
+            cursor: pointer;
+            font-size: 24px;
+            transition: 0.7s;
+            }
+        .closed i:hover{
+            color: #29c5e6;
+            }
+        .tabs>div {
+                margin-top: -85px;
+            }
+        #content1 h2, 
+        #content2 h2, 
+        #content3 h2, 
+         #content4 h2 {
+                font-size: 37px;  
+            }
+        .tabs>label {
+            width: 25%;
+            font-size: 12px;
+            padding: 13px 15px;  
+        }
+        .tabs .label::before {
+            width: 20px;
+            height: 20px;
+        }
+        .about-heading {
+       padding-top: 50px;
+        font-size: 12px;
+    }
+    .about-heading::before {
+        left: -20px;
+        top: 16px;
+    }
+    .about-heading::after {
+        width: 169px;
+    }
+    .main_text {
+       font-size: 9px;
+    }
+    .team-position {
+        font-size: 10px;
+    }
+    .services::after {
+        width: 126px;
+    }
+    .parent {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .parent::before {
+        top: 16px;
+    }
+    .teams::after {
+        width: 132px;
+    }
+    .support::after {
+        width: 73px;
+    }
+    .services_text {
+        font-size: 10px;
+    }
+    .btn3 {
+        margin-top: 15px;
+    }
+    .team-text h2 {
+        font-size: 10px;
+    }
+    
+.team-text p {
+    font-family: 'Tahoma';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9px;
+    color: #b2b2b2;
+    line-height: 1;
+    text-align: justify;
+    margin-top: -6px;
+}
+.clients::after {
+    width: 587px;
+}
+.clients {
+    font-size: 12px;
+    padding-top: 17px;
+}
+footer {
+    margin-top: -21px;
+}
+.footer .h2 {
+    font-size: 12px;
+}
+.twitter-text {
+    font-size: 9px;
+}
+.footer-menu li a {
+    font-size: 10px;
+}
+
+.social-box-parent1 .fab {
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    padding: 4px;
+}
+.social-box-parent1 .fab {
+    margin-right: 2px;
+}
+.social-box-parent2 .fab {
+    width: 14px;
+    height: 14px;
+    margin-right: 1px;
+    font-size: 7px;
+    padding: 4px;
+}
+
+.social-box-parent2 .fas {
+    width: 14px;
+    height: 14px;
+    margin-right: -8px;
+    font-size: 7px;
+    padding: 4px;
+}
+.text-footer {
+    font-size: 9px;
+    padding-top: 16px;
+}
+}
+@media(max-width: 767px){
+    .header-box-form {
+        display: none;
+    }
+    #content1 h2, 
+    #content2 h2, #content3 h2, 
+    #content4 h2 {
+        font-size: 27px;
+    }
+    .tabs>label {
+        width: 25%;
+        font-size: 8px;
+        padding: 12px 14px;  
+    }
+    .tabs .label::before {
+        width: 15px;
+        height: 15px;
+    }
+    .tabs>div {
+        padding: 31px 23px;
+        font-size: 16px;
+
+    }
+    .about-heading::after {
+        width: 350px;
+    }
+    .about-heading {
+        padding-top: 41px;
+    }
+    .main_text {
+        font-size: 12px;
+    }
+    .services_text {
+        font-size: 12px;
+    }
+    .services::after {
+        width: 424px;
+    }
+    .teams::after {
+        width: 416px;
+    }
+    .about_services {
+        margin-bottom: 10px;
+    }
+    .team-text p {
+        font-size: 11px;
+        margin-top: 1px;
+    }
+    .support::after {
+        width: 374px;
+    }
+    .clients::after {
+        width: 404px;
+    }
+    .text-footer {
+        font-size: 6px;
+    }
+    .footer .h2 {
+        font-size: 10px;
+    }
+    .btn4 {
+        font-size: 9px;
+    }
+    .twitter-text {
+        font-size: 8px;
+    }
+    
+    .footer-menu li a {
+        font-size: 8px;
+    }
+    .social-box-parent1 .fab {
+        width: 15px;
+        height: 15px;
+        font-size: 8px;
+    }
+    .social-box-parent2 .fab {
+        width: 10px;
+        height: 10px;
+        font-size: 5px;
+        padding: 3px;
+        margin-right: -2px;
+    }
+    .social-box-parent2 .fas {
+        width: 10px;
+        height: 10px;
+        font-size: 5px;
+        padding: 3px;
+        margin-right: -1px;
+    }
+}
+@media(max-width: 600px){
+#slider-banner .owl-nav .owl-prev,
+#slider-banner .owl-nav .owl-next{
+    display: block;
+}
+#slider-banner .owl-nav .owl-prev {
+    position: absolute;
+    left: 2px;
+    bottom: 75%;
+    opacity: 0.5;
+}
+#slider-banner .owl-nav .owl-next {
+    position: absolute;
+    right: 2px;
+    bottom: 75%;
+    opacity: 0.5;
+}
+#slider-banner .owl-nav .owl-prev:hover, 
+#slider-banner .owl-nav .owl-next:hover {
+    opacity: 0.8;
+    color: #55ACEE;
+}
+.footer .h2 {
+    text-align: center;
+}
+
+.footer-menu {
+    list-style: none;
+    column-count: 6;
+    height: 100px;
+}
+.footer-menu li a {
+    display: block;
+    height: 20px; 
+    line-height: 39px;
+    padding-right: 15px;
+    padding-left: 16px;
+}
+.social-box {
+    margin-top: -72px;
+}
+.logo-footer{
+    display: none;
+}
+.text-footer {
+    font-size: 9px;
+    padding-bottom: 10px;
+}
+.social-box-parent1 .fab {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    padding: 7px;
+}
+.social-box-parent2 .fab {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    padding: 7px;
+    margin-right: 5px;
+}
+.social-box-parent2 .fas {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    padding: 7px;
+    margin-right: 5px;
+}
+
+}
+@media(max-width: 500px){
+
+}
+@media(max-width: 470px){
+        
+}
+@media(max-width: 400px){
+}
+
+
+
