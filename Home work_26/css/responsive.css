@@ -12,34 +12,33 @@
         padding-left: 35px;
     }
     .about-heading::after {
-        width: 290px;
+        min-width: 290px;
     }
-  
     .parent {
         padding-top: 23px;
-     
     }
     .services::after {
-        width: 207px;
+        min-width: 207px;
     }
     .support::after {
-        width: 153px;
+        min-width: 153px;
     }
     .team-text p {
         font-size: 10px;
     }
     .clients::after {
-        width: 826px;
+        min-width: 826px;
     }
     .social-box-parent1 .fab {
         margin-right: 10px;
-        
     }
 }
-
 @media(max-width: 991px){ 
-    .nav-menu{
+    .menu{
         display: block;
+    }
+    .nav-menu{
+        display: none;
         position: fixed;
         background: #e2e2e2;
         width: 100%;
@@ -57,12 +56,12 @@
         .responsive-nav {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 35px;
         }
         .responsive-nav-name{
-            font-family: 'Conv_HelveticaNeueCyr-Roman';
+            font-size: 9px;
             font-size: 20px;
             color:  #7e7e7e;
+            
             }
         .icon-humburher i{
             color: #333;
@@ -87,26 +86,21 @@
         .closed i:hover{
             color: #29c5e6;
             }
-        .tabs>div {
-                margin-top: -85px;
-            }
-        #content1 h2, 
-        #content2 h2, 
-        #content3 h2, 
-         #content4 h2 {
+            
+            .tabs-content h2 {
                 font-size: 37px;  
             }
-        .tabs>label {
-            width: 25%;
+            .tabs li  {
+            width: 50%;
             font-size: 12px;
             padding: 13px 15px;  
+            margin-bottom: 0;
         }
         .tabs .label::before {
-            width: 20px;
-            height: 20px;
+            width: 23px;
+            height: 23px;
         }
         .about-heading {
-       padding-top: 50px;
         font-size: 12px;
     }
     .about-heading::before {
@@ -114,7 +108,7 @@
         top: 16px;
     }
     .about-heading::after {
-        width: 169px;
+        min-width: 169px;
     }
     .main_text {
        font-size: 9px;
@@ -123,7 +117,7 @@
         font-size: 10px;
     }
     .services::after {
-        width: 126px;
+        min-width: 126px;
     }
     .parent {
         padding-top: 20px;
@@ -133,11 +127,17 @@
         top: 16px;
     }
     .teams::after {
-        width: 132px;
+        min-width: 117px;
     }
     .support::after {
-        width: 73px;
-    }
+        min-width: 8px;
+        left: 99px;
+        }
+        .clients::after {
+            min-width: 586px;
+        }
+    
+
     .services_text {
         font-size: 10px;
     }
@@ -157,9 +157,6 @@
     line-height: 1;
     text-align: justify;
     margin-top: -6px;
-}
-.clients::after {
-    width: 587px;
 }
 .clients {
     font-size: 12px;
@@ -211,27 +208,22 @@ footer {
     .header-box-form {
         display: none;
     }
-    #content1 h2, 
-    #content2 h2, #content3 h2, 
-    #content4 h2 {
-        font-size: 27px;
-    }
-    .tabs>label {
-        width: 25%;
-        font-size: 8px;
-        padding: 12px 14px;  
-    }
-    .tabs .label::before {
-        width: 15px;
-        height: 15px;
-    }
-    .tabs>div {
-        padding: 31px 23px;
-        font-size: 16px;
+    .responsive-nav{
+        padding-bottom: -30px;
 
     }
+    .responsive-nav-name {
+        padding-bottom: 10px;
+    }
+    .tabs .label{
+        font-size: 15px;
+    }
+    .tabs .label::before {
+        width: 23px;
+        height: 24px;
+    }
     .about-heading::after {
-        width: 350px;
+        min-width: 350px;
     }
     .about-heading {
         padding-top: 41px;
@@ -243,10 +235,10 @@ footer {
         font-size: 12px;
     }
     .services::after {
-        width: 424px;
+        min-width: 424px;
     }
     .teams::after {
-        width: 416px;
+        min-width: 416px;
     }
     .about_services {
         margin-bottom: 10px;
@@ -256,124 +248,134 @@ footer {
         margin-top: 1px;
     }
     .support::after {
-        width: 374px;
+        min-width: 374px;
     }
     .clients::after {
-        width: 404px;
-    }
-    .text-footer {
-        font-size: 6px;
+        min-width: 404px;
     }
     .footer .h2 {
         font-size: 10px;
+    }
+    .footer-menu {
+        column-count: 6;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
     }
     .btn4 {
         font-size: 9px;
     }
     .twitter-text {
-        font-size: 8px;
+        font-size: 9px;
     }
-    
-    .footer-menu li a {
-        font-size: 8px;
+    .social-box{
+        margin-top: -77px;
+        text-align: center;
     }
-    .social-box-parent1 .fab {
-        width: 15px;
-        height: 15px;
-        font-size: 8px;
+    .social-box-parent1{
+        padding-top: 9px;
     }
     .social-box-parent2 .fab {
-        width: 10px;
-        height: 10px;
-        font-size: 5px;
+        width: 17px;
+        height: 17px;
+        font-size: 10px;
         padding: 3px;
-        margin-right: -2px;
+        margin-left: 6px;
     }
     .social-box-parent2 .fas {
-        width: 10px;
-        height: 10px;
-        font-size: 5px;
+        width: 17px;
+        height: 17px;
+        font-size: 10px;
         padding: 3px;
-        margin-right: -1px;
+        margin-left: 2px; 
     }
+    .logo-footer{
+        padding-top: 0; 
+        display: block;
+        text-align: center;
+    }
+    .text-footer {
+        font-size: 8px;
+        text-align: center;
+        padding: 10px 0 20px 0;
+    }
+ 
 }
 @media(max-width: 600px){
-#slider-banner .owl-nav .owl-prev,
-#slider-banner .owl-nav .owl-next{
-    display: block;
-}
-#slider-banner .owl-nav .owl-prev {
-    position: absolute;
-    left: 2px;
-    bottom: 75%;
-    opacity: 0.5;
-}
-#slider-banner .owl-nav .owl-next {
-    position: absolute;
-    right: 2px;
-    bottom: 75%;
-    opacity: 0.5;
-}
-#slider-banner .owl-nav .owl-prev:hover, 
-#slider-banner .owl-nav .owl-next:hover {
-    opacity: 0.8;
-    color: #55ACEE;
-}
+    .tabs li {
+        width: 100%;
+    }
 .footer .h2 {
-    text-align: center;
+    text-align: start;
 }
-
-.footer-menu {
-    list-style: none;
-    column-count: 6;
-    height: 100px;
+.responsive-nav-name {
+    padding-bottom: 0;
 }
-.footer-menu li a {
-    display: block;
-    height: 20px; 
-    line-height: 39px;
-    padding-right: 15px;
-    padding-left: 16px;
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-.social-box {
-    margin-top: -72px;
+.slider-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transition: 0.4s;
+    border-radius: 100%;
+    border: 1px solid #666;
+    box-shadow: inset 1px 1px 1px #888;
+    background-color: #eee;
+    margin-right: 8px; 
+    
 }
-.logo-footer{
-    display: none;
+.slider-dot:focus{
+    outline: none;
 }
-.text-footer {
-    font-size: 9px;
-    padding-bottom: 10px;
+.slider-dot:hover{
+    background-color: #7e7e7e;
 }
-.social-box-parent1 .fab {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    padding: 7px;
-}
-.social-box-parent2 .fab {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    padding: 7px;
-    margin-right: 5px;
-}
-.social-box-parent2 .fas {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    padding: 7px;
-    margin-right: 5px;
-}
-
 }
 @media(max-width: 500px){
+    .about-heading::after {
+        min-width: 312px;
+    }
+    .services::after {
+        min-width: 387px;
+    }
+    .teams::after {
+        min-width: 380px;
+    }
+    .support::after {
+        min-width: 350px;
+    }
+    .clients::after {
+        min-width: 371px;
+    }
+    
 
 }
 @media(max-width: 470px){
         
 }
-@media(max-width: 400px){
+@media(max-width: 375px){
+    .about-heading::after {
+        min-width: 187px;
+    }
+    .services::after {
+        min-width: 263px;
+    }
+    .teams::after {
+        min-width: 263px;
+    }
+    .teams::after {
+        min-width: 255px;
+    }
+    .support::after {
+        min-width: 226px;
+    }
+    .clients::after {
+        min-width: 243px;
+    }
 }
 
 

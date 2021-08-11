@@ -10,23 +10,23 @@ jQuery(document).ready(function () {
 	jQuery('.closed').click(function(){
 		jQuery('.nav-menu').hide("slow");
 	});
-
+	
 	var slid = jQuery('#slider-banner');
 
 	slid.owlCarousel({
-		items: 1,
-		autoplay: true,
-		autoplayTimeout: 6000,
+		items: 7,
+		// autoplay: true,
+		autoplayTimeout: 2000,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: true,
-		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-		dots: false,
+		nav: false,
+		navText: [],
+		dots: true,
 		mouseDrag: true,
-		margin: 30,
-		stagePadding: 0,
+		dotClass: 'slider-dot',
+		margin: 0,
 		autoWidth: false,
 		responsiveClass: true,
 		responsive: {
@@ -38,19 +38,23 @@ jQuery(document).ready(function () {
 				autoplay: false
 			},
 			479: {
-				items: 1,
+				items: 2,
+				dots: true,
 				mouseDrag: true
 			},
 			767: {
-				items: 1,
+				items: 3,
+				dots: true,
 				mouseDrag: true
 			},
 			991: {
-				items: 1,
+				items: 3,
+				dots: true,
 				mouseDrag: true
 			},
 			1099: {
-				items: 1,
+				items: 4,
+				dots: true,
 				mouseDrag: true
 			}
 		}
