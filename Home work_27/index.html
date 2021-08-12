@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 27 </title>
+</head>
+
+<body>
+    <div id="lang"></div>
+    <div id="nameCat"></div> 
+</body>
+<script>
+    // Задание 2 - Ассоциативные массивы
+    console.log('************************');
+    console.log('Task #2');
+    console.log('************************');
+
+    let myGame = {
+        "name": "Horizon",
+        "genre": "Action",
+        "developer": "Guerrilla"
+    };
+    myGame.publisher = "Sony";
+    myGame.platforms = "PlayStation4";
+
+    console.log(Object.keys(myGame).length);
+
+    delete myGame['genre'];
+    delete myGame['platforms'];
+    console.log(myGame);
+
+    // Object.keys(myGame).forEach(key => (delete myGame[key]));
+
+    console.log('Before erasing: ', myGame);
+    myGame = {};
+    console.log('After erasing: ', myGame);
+
+
+    // Задание З - Создать функцию  через Match получить максимальное число 
+    console.log('************************');
+    console.log('Task #3');
+    console.log('************************');
+
+    function sum(arr) {
+        console.log(Math.max.apply(null, arr));
+    }
+    let arr = [5, 80, -44, 120, 60, -5, 206];
+    sum(arr);
+
+
+    let maxSum = function () {
+        return Math.max(5, 80, -44, 120, 60, -5, 206);
+    }
+    console.log(maxSum());
+
+
+    // Задание 4 - через set присвоить lang и nameCat, удалить name Dog.
+    console.log('************************');
+    console.log('Task #4');
+    console.log('************************');
+    let person = {
+        firstName: "Maya",
+        lastName: "Dog",
+        language: " ",
+        name: " ",
+        "name Dog": "Profi",
+        set lang(lang) {
+            this.language = lang;
+        },
+        set nameCat(nameCat) {
+            this.name = nameCat;
+        }
+
+    };
+    person.nameCat = "Unity";
+    person.lang = "ua";
+    delete person["name Dog"];
+    document.getElementById("lang", "nameCat").innerHTML = person.language + "</br>" + person.name;
+    console.log(person);
+
+</script>
+
+</html>

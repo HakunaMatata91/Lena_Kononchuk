@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text1{
+        border: 1px solid #132613;
+        background: #e2e2e2;
+        padding: 10px;
+        width: 600px;
+        margin: 0 auto;
+    }
+  
+</style>
+
+<body>
+    <div class="text1">
+        <p>
+            <span id="text1-start">Horizon Zero Dawn представляет собой Action/RPG с видом от третьего лица[5][6]. Игрок управляет</span><span id="text1-ellipsis">...</span>
+            <span id="text1-end" style="display: none;">молодой охотницей по имени Элой в постапокалиптическом мире, населённом механическими зверями-«машинами»[7].</span> 
+        </p>
+        <button id="btn1" onclick="toggleParagraph()">Show more</button>
+   
+    </div>
+</body>
+<script>
+    // var bt1 = 
+    function toggleVisibility(id) {
+        const element = document.getElementById(id);
+        const display = element.style.display;
+        if (display === 'none') {
+            element.style.display = 'inline';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+
+    function toggleButtonCaption(id) {
+        const button = document.getElementById(id);
+        const caption = button.textContent;
+        // debugger;
+        if (caption === 'Show more') {
+            button.textContent = 'Show less';
+        } else {
+            button.textContent = 'Show more';
+        }
+    }
+
+    function toggleParagraph() {
+        toggleVisibility('text1-end');
+        toggleVisibility('text1-ellipsis');
+        toggleButtonCaption('btn1');
+    }
+</script>
+</html>
