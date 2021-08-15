@@ -43,17 +43,17 @@ jQuery(document).ready(function () {
 				mouseDrag: true
 			},
 			767: {
-				items: 3,
+				items: 5,
 				dots: true,
 				mouseDrag: true
 			},
 			991: {
-				items: 3,
+				items: 6,
 				dots: true,
 				mouseDrag: true
 			},
 			1099: {
-				items: 4,
+				items: 7,
 				dots: true,
 				mouseDrag: true
 			}

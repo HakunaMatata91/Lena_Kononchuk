@@ -205,6 +205,9 @@ footer {
 }
 }
 @media(max-width: 767px){
+    .page {
+        padding-bottom: 400px;
+    }
     .header-box-form {
         display: none;
     }
@@ -314,7 +317,6 @@ footer {
 .owl-dots {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 .slider-dot {
     display: inline-block;
@@ -325,7 +327,7 @@ footer {
     border: 1px solid #666;
     box-shadow: inset 1px 1px 1px #888;
     background-color: #eee;
-    margin-right: 8px; 
+    margin-right: 10px; 
     
 }
 .slider-dot:focus{
