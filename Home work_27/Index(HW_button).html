@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,47 @@
     <title>Document</title>
 </head>
 <style>
-    .text1{
-        border: 1px solid #132613;
-        background: #e2e2e2;
-        padding: 10px;
+    .text1 {
+    
         width: 600px;
         margin: 0 auto;
+        text-align: center;
     }
-  
+
+    button {
+        border: 1px solid #092cb2;
+        padding: 10px;
+        border-radius: 5px;
+        background: #d5e7f7;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #004665;
+        color: #fff;
+    }
 </style>
 
 <body>
     <div class="text1">
         <p>
-            <span id="text1-start">Horizon Zero Dawn представляет собой Action/RPG с видом от третьего лица[5][6]. Игрок управляет</span><span id="text1-ellipsis">...</span>
-            <span id="text1-end" style="display: none;">молодой охотницей по имени Элой в постапокалиптическом мире, населённом механическими зверями-«машинами»[7].</span> 
+            <span id="text1-start">Horizon Zero Dawn — компьютерная игра в жанре Action/RPG с открытым миром,
+                разработанная нидерландской студией Guerrilla Games и изданная Sony Interactive Entertainment для
+                игровой консоли PlayStation 4 в 2017 году; версия игры для Windows вышла 7 августа 2020 года[3].
+                Действие Horizon Zero Dawn происходит в постапокалиптическом мире, захваченном роботами; немногие люди
+                живут в первобытных племенах. </span>
+            <span id="text1-end" style="display: none;">Игра стала первой игрой Guerrilla Games за много лет, не
+                относящейся к серии Killzone; концепция игры, придуманная арт-директором студии Жан-Бартом ван Бееком,
+                считалась чрезвычайно рискованной, но всё же была принята в разработку. Horizon Zero Dawn использует
+                игровой движок Decima, первоначально разработанный для игры Killzone: Shadow Fall. Чтобы достоверно
+                изобразить жизнь первобытных племён и разрушение городов и зданий спустя тысячу лет после падения
+                цивилизации, разработчики консультировались со специалистами — антропологами и инженерами. Музыкальное
+                сопровождение к игре примечательно использованием экспериментальных самодельных инструментов.</span>
         </p>
         <button id="btn1" onclick="toggleParagraph()">Show more</button>
-   
+
     </div>
 </body>
 <script>
@@ -52,8 +76,8 @@
 
     function toggleParagraph() {
         toggleVisibility('text1-end');
-        toggleVisibility('text1-ellipsis');
         toggleButtonCaption('btn1');
     }
 </script>
+
 </html>
