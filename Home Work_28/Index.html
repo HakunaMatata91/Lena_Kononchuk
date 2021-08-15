@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 28</title>
+</head>
+
+<body>
+</body>
+<script>
+
+    let Person = function (name, lastName, age, gender, married, children, nationality, language, post) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+        this.married = married;
+        this.children = children;
+        this.nationality = nationality;
+        this.language = language;
+        this.post = post;
+        this.description = function () {
+            return 'Привет меня зовут' + " " + this.name + "," + "  " + 'моя фамилия' + " " + this.lastName + " " + 'и мне' + " " + this.age + " " + "лет"  + "," + "  " + 'я' + " " + this.gender + " " + ' и я' + " " + this.married + " " + 'у меня' + " " + this.children + " " + 'детей' + ", " + " " + 'я' + " " +
+                this.nationality + " " + 'и мой язык' + " " + this.language + " " + 'я занимаю должность' + " " + this.post + '</br>';
+        };
+    };
+    let Mark = new Person('Александр', 'Иванов', 30, 'мужчина', 'женат', 3, 'украинец', 'русский', 'программиста');
+    document.write(Mark.description());
+
+    let Nikolay = new Person('Николай', 'Носков', 55, 'мужчина', 'разведён', 1, 'украинец', 'русский', 'охранника');
+    document.write(Nikolay.description());
+
+    let Stepan = new Person('Денис', 'Петров', 70, 'мужчина', 'женат', 'нет', 'россиянин', 'русский', 'пекаря');
+    document.write(Stepan.description());
+
+</script>
+
+</html>
