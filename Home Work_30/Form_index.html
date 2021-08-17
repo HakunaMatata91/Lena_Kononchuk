@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mess"></div>
+    <p>Введите 10-значное число</p>
+    <input id="input" type="number" title="Только цифры" maxlength="10" />
+    <button onclick="myFunction()">Проверка числа</button>
+    <div id="results"></div>
+</body>
+<script>
+
+    function myFunction() {
+        let message, x, max_chars;
+        message = document.getElementById("results");
+        message.innerHTML = "";
+        x = document.getElementById("input").value;
+        const numberOfDigits = x.trim().length
+        try {
+            if (numberOfDigits > 10) throw "Вы ввели слишком много, должно быть не более 10 символов";
+            if (isNaN(x)) throw "Это число";
+            if (numberOfDigits == "") throw "Вы ничего не ввели";
+            if (numberOfDigits < 10) throw "Слишком мало, введите 10 символов";
+        } catch (err) {
+            message.innerHTML = " " + err;
+        } finally {
+            document.getElementById("results").value = " ";
+        }
+
+
+
+
+    };
+
+</script>
+
+</html>

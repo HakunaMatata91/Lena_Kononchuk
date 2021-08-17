@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW29</title>
+</head>
+
+<body>
+    
+</body>
+
+<script>
+
+    const today = new Date()
+    const userAnswer = prompt('Введите актуальную дату', '17 August 2021')
+    const userDate = new Date(userAnswer)
+
+    const isYearSame = today.getFullYear() === userDate.getFullYear()
+    const isMonthSame = today.getMonth() === userDate.getMonth()
+    const isDateSame = today.getDate() === userDate.getDate()
+
+    if (isYearSame && isMonthSame && isDateSame) {
+        alert('today')
+    }
+    // ..or if (today.toLocaleDateString() === userDate.toLocaleDateString())
+    else if (today.getTime() < userDate.getTime()) {
+        alert('not yet')
+    }
+    else {
+        alert('already met')
+    }
+</script>
+
+</html>
