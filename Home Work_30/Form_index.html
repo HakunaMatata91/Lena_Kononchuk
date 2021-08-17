@@ -11,7 +11,7 @@
 <body>
     <div class="mess"></div>
     <p>Введите 10-значное число</p>
-    <input id="input" type="number" title="Только цифры" maxlength="10" />
+    <input id="input" type="text" title="Только цифры" maxlength="10" />
     <button onclick="myFunction()">Проверка числа</button>
     <div id="results"></div>
 </body>
@@ -22,11 +22,11 @@
         message = document.getElementById("results");
         message.innerHTML = "";
         x = document.getElementById("input").value;
-        const numberOfDigits = x.trim().length
+        const numberOfDigits = x.trim().length;
         try {
             if (numberOfDigits > 10) throw "Вы ввели слишком много, должно быть не более 10 символов";
-            if (isNaN(x)) throw "Это число";
-            if (numberOfDigits == "") throw "Вы ничего не ввели";
+            if (isNaN(numberOfDigits)) throw "Это число";
+            if (numberOfDigits == " ") throw "Вы ничего не ввели";
             if (numberOfDigits < 10) throw "Слишком мало, введите 10 символов";
         } catch (err) {
             message.innerHTML = " " + err;
