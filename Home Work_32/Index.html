@@ -14,7 +14,7 @@
             <button id="buttonPlus">+</button>
             <button id="buttonMinus">-</button>
             <button id="buttonMultiply">*</button>
-            <button id="buttonDevide">/</button>
+            <button id="buttonDivide">/</button>
             <button id="buttonPercent">%</button>
         </div>
         <hr />
@@ -40,7 +40,7 @@
     let buttonPlus = document.getElementById('buttonPlus');
     let buttonMinus = document.getElementById('buttonMinus');
     let buttonMultiply = document.getElementById('buttonMultiply');
-    let buttonDevide = document.getElementById('buttonDevide');
+    let buttonDivide = document.getElementById('buttonDivide');
     let buttonPercent = document.getElementById('buttonPercent');
     let input1 = document.getElementById("Number1");
     let input2 = document.getElementById("Number2");
@@ -74,7 +74,6 @@
                 break;
         }
         document.getElementById("result").innerHTML = calculus;
-
     }
     function buttonPlusClick() {
         operationBox(getNumber1(), getNumber2(), '+');
@@ -85,7 +84,7 @@
     function buttonMultiplyClick() {
         operationBox(getNumber1(), getNumber2(), '*');
     }
-    function buttonDevideClick() {
+    function buttonDivideClick() {
         operationBox(getNumber1(), getNumber2(), '/');
     }
     function buttonPercentClick() {
@@ -94,7 +93,7 @@
     buttonPlus.addEventListener("click", buttonPlusClick);
     buttonMinus.addEventListener("click", buttonMinusClick);
     buttonMultiply.addEventListener("click", buttonMultiplyClick);
-    buttonDevide.addEventListener("click", buttonDevideClick);
+    buttonDivide.addEventListener("click", buttonDivideClick);
     buttonPercent.addEventListener("click", buttonPercentClick);
 </script>
 
