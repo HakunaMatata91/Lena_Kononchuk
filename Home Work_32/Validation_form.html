@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation_form</title>
+</head>
+
+<body>
+    <form class="formWithValidation">
+        <div>
+            <div>
+                <label>Form:</label>
+            </div>
+            <div>
+                <input type="text" class="from field">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Password:</label>
+            </div>
+            <div>
+                <input type="password" class="password field">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Password confirmation:</label>
+            </div>
+            <div>
+                <input type="password" class="passwordConfirmation field">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Where:</label>
+            </div>
+            <div>
+                <select class="where field">
+                    <option></option>
+                    <option value="developers">Developers</option>
+                    <option value="managers">Managers</option>
+                    <option value="devops">DevOps</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Message:</label>
+            </div>
+            <div>
+                <textarea class="messege field"></textarea>
+            </div>
+        </div>
+        <input type="submit" class="validateBtn" value="Validete">
+    </form>
+</body>
+<script>
+    let form = document.querySelector('.formWithValidation')
+    let validateBtn = form.querySelector('.validateBtn');
+    let from = form.querySelector('.from');
+    let password = form.querySelector('.password');
+    let passwordConfirmation = form.querySelector('.passwordConfirmation');
+    let where = form.querySelector('.where');
+    let messege = form.querySelector('.messege');
+    let fields = form.querySelectorAll('.field');
+
+    let generateError = function (text) {
+        let error = document.createElement('div')
+        error.className = 'error';
+        error.style.color = 'red'
+        error.innerHTML = text
+        return error;
+    }
+    let removeValidation = function () {
+        let errors = form.querySelectorAll('.error')
+        for (let i = 0; i < errors.length; i++) {
+            errors[i].remove()
+        }
+    }
+    let checkFieldsPresence = function (){
+        for (let i = 0; i < fields.length; i++) {
+            if (!fields[i].value) {
+                console.log('field is blank', fields[i])
+                let error = generateError('Cannot be blank')
+                form[i].parentElement.insertBefore(error, fields[i])
+            }
+        }
+    }
+    let checkPasswordMatch = function (){
+        if (password.value !== passwordConfirmation.value) {
+            console.log('not')
+            let error = generateError('Password doesnt match')
+            password.parentElement.insertBefore(error, password)
+        }
+    }
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+
+        removeValidation()
+        checkFieldsPresence()
+        checkPasswordMatch()
+    });
+
+</script>
+
+</html>
