@@ -15,15 +15,17 @@ img{
     font-family: 'helveticaneuecyrlight';
     font-size: 16px;
 }
-
 .header{
     background: url(../img/pic_header.png) no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 .responsive-menu{
     display: none;
+}
+.nav-menu .closed{
+	display: none;
 }
 .nav-menu ul.sub-menu{
     display: flex;
@@ -60,31 +62,31 @@ img{
  }
  .header-contacts{
      display: flex;
+     justify-content: space-between;
  }
  .artical{
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'helveticaneuecyrlight';
     color: #fff;
     padding-top: 3px;
  }
  .info {
      text-align: center;
-     margin-left: 15px;
-     line-height: 20px;
+     margin-left: 17px;
+     line-height: 17px;
  }
  .info .tel{
-    font-size: 24px;
-    font-family: 'helveticaneuecyrlight';
-    color: #fff;
-    transition: 0.5s;
-    text-decoration: none;
- }
+	font-family: 'helveticaneuecyrroman';
+	font-size: 23px;
+	color: #fff;
+	transition: 0.7s;
+}
  .work-time{
     font-size: 14px;
     font-family: 'helveticaneuecyrlight';
     color: #fff;
  }
- .block1 h2{
+ .countdown_block1 h2{
     font-family: 'helveticaneuecyrbold_italic';
     font-size: 30px;
     color: #4f3333;
@@ -100,39 +102,44 @@ img{
     line-height: 0.3;
     color: #230000;
  }
- .block1_footer{
-    background: url("../img/section_header.png") no-repeat;
+ .countdown_block1_bg{
+    background: url("../img/section_header.png");
     background-size: cover;
     margin-top: 37px;
     width: 100%;
 }
-.block1_footer h2{
+.countdown_block1_bg h2{
     font-family: 'helveticaneuecyrlight';
     color: #fff;
     font-size: 24px;
     text-align: center;
-    padding: 37px 0 43px 63px;
+    padding: 33px 0 36px 52px;
 }
-.block2 h2{
+.multicard_block h2{
     font-family: 'helveticaneuecyrbold_italic';
     font-size: 30px;
     color: #230000;
     text-align: center;
-    margin: 40px 0 30px 0;
+    margin: 35px 0 30px 0;
 }
-.block2 p{
+.multicard_block p{
     font-family: 'helveticaneuecyrlight';
     font-size: 16px;
     color: #4f3333;
 }
-.block3 {
+.about_product_block {
     background: url("../img/new-pic-man.png") no-repeat;
     background-size: cover;
+    background-position: center;
 }
-.block3 h2{
+.about_product_block h2{
     text-align: center;
     color: #ffd800;
-    padding-top: 52px;
+    padding-top: 38px;
+    font-size: 28px;
+}
+.img_order img{
+    margin-bottom: 17px;
 }
 .list ul{
     list-style-image: url(/img/img_ul.png);
@@ -142,7 +149,7 @@ img{
     font-family: 'helveticaneuecyrlight';
     color: #fff;
     font-size: 16px;
-    padding: 0 0 17px 28px;
+    padding: 0 0 12px 28px;
 }
 .img_wallet {
     display: flex;
@@ -156,23 +163,32 @@ img{
 .about_multicard p{
     font-family: 'helveticaneuecyrbold_italic';
     color: #4f3333;
-    font-size: 16px;
-    margin: 40px 0 40px 0;
+    font-size: 15px;
+    padding: 33px 0 20px 0;
 }
-.reviews{
+.img_order a{
+    z-index: 999;
+}
+
+.reviews_block{
     background: url("../img/bg_reviews.png") no-repeat;
     background-size: cover;
+    padding-bottom: 30px;
 }
-.reviews h2{
+.reviews_block h2{
     font-family: 'helveticaneuecyrbold_italic';
     font-size: 30px;
     color: #ffd800;
     text-align: center;
-    padding-top: 43px;
+    padding-top: 40px;
+}
+.reviews-box_parent {
+	display: flex;
+	flex-direction: row;
 }
 .reviews_box_img img{
-    margin: 23px 17px 28px 0;
-    width: 100%;
+    max-width: 200px;
+    margin: 20px 17px 28px 0;
 }
 .reviews_box_text h2{
     font-family: 'helveticaneuecyrlight';
@@ -186,9 +202,8 @@ img{
     font-family: 'helveticaneuecyrlight';
     color: #fff;
     font-size: 16px;
-    padding-top: 13px;
 }
-.block4 h2 {
+.countdown_block2 h2 {
     font-family: 'helveticaneuecyrbold_italic';
     font-size: 30px;
     color: #4f3333;
@@ -210,6 +225,7 @@ img{
  .sale_box_img3 .red-wallet{
     position: absolute;
     top: 172px;
+    left: 0;
 }
 .sale_box_img2 .black-wallet{
     position: absolute;
@@ -227,26 +243,15 @@ img{
      z-index: 2;
  }
  .sale_prise_new {
-     color: #fff;
+     color: #ffd800;
+     font-size: 24px;
+     margin-left: -10px;
+     font-family: 'helveticaneuecyrbold';
  }
  .sale_prise_old{
-     color: #ffd800;
- }
- .Form-box{
-     display: flex;
-     flex-direction: column;
-     width: 380px;
-     height: 374px;
-     padding: 20px;
-     background: #d60002;
-     margin-top: 38px;
-     border-radius: 3px;
-     margin-left: 90px;
- }
- .Form-box .sale{
-    font-family: 'helveticaneuecyrlight_italic';
+    font-family: 'helveticaneuecyrlight';
     color: #fff;
-    text-align: center;
+    font-size: 16px;
  }
  #countdown #countdown2{
     display: flex;
@@ -255,23 +260,22 @@ img{
 .countDays,
 .countMinutes,
 .countHours{
-	width: 71px;
-    height: 71px;
+	width: 70px;
+    height: 70px;
     border-radius: 50%;
     background:#fff;
     background-size: contain;
 	text-align: center;
     display: inline-block;
-    margin-right: 14px;
-    margin-top: 23px;
+    margin: 14px 9px 16px 6px;
 }
 .position{
     font-family: 'helveticaneuecyrlight';
-    font-size: 36px;
+    font-size: 34px;
 	color: #900002;
 	display: inline-block; 
     position: relative; 
-    width: 17px;
+    width: 16px;
 }
 .countSeconds p,
 .countDays p,
@@ -282,16 +286,82 @@ img{
     font-size: 16px;
     margin-top: -15px;
 }
-
-
-
- /*
-.form_box{
-    display: flex;  
+.Form-box{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 390px;
+    padding: 20px;
+    background: #d60002;
+    margin-top: 38px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+.sale{
+    font-family: 'helveticaneuecyrlight_italic';
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
  }
+.form_box_child input {
+    width: 100%;
+	border: none;
+	margin-bottom: 12px;
+	padding: 10px;
+	border-radius: 4px;
+	font-family: 'helveticaneuecyrroman';
+	font-size: 18px;
+ }
+ .form_box_child input:focus{
+     outline: none;
+ }
+ .submit input {
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background-color: #ffd800;
+	padding: 6px;
+	font-family: 'helveticaneuecyrbold';
+	font-size: 22px;
+	color: #d60002;
+	cursor: pointer;
+}
+.submit input:hover{
+	background-color: #beda54;
+	color: #230000;
+
+}
+.menu-police ul.about-menu li a button:focus,
+.menu-police ul.about-menu li a button{
+	font-family: 'helveticaneuecyrlight';
+	font-size: 24px;
+	border: none;
+    background-color: inherit;
+	cursor: pointer;
+	text-decoration: underline;
+	color: #ffd800;
+	margin-right:  20px;
+	outline: none;
+}
+.footer_bg{
+    background-image: url("../img/bg_footer.png");
+    margin-top: 30px;
+}
+.privacy-policy ul.about-menu {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+    padding-top: 37px;
+}
+.text-footer{
+    padding-bottom: 25px;
+}
+.text-footer p{
+	text-align: center;
+	font-family: 'helveticaneuecyrlight';
+    font-size: 15px;
+    color: #fff;
+    line-height: 1px;
+}
 
 
-font-family: 'helveticaneuecyrlight';
-font-family: 'helveticaneuecyrbold_italic';
- font-family: 'helveticaneuecyrlight_italic';
- */

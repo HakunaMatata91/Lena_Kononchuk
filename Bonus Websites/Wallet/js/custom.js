@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
     console.log("document loaded");
 
     'use strict';
-    jQuery('.icon-humburher').click(function(){
+    jQuery('.humburher-menu').click(function(){
 		jQuery('.nav-menu').show("slow");
 	});
 	

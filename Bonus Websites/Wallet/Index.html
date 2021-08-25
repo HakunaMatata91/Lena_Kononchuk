@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallet</title>
-    <link type="text/css" rel="stylesheet" href="css/Style.css"/>
-    <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
-    <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
-    <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css"/>
-    <link type="text/css" rel="stylesheet" href="fonts/Helvetica/stylesheet.css"/>
-    <link type="text/css"  href="vendor/fontawesome/css/all.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/Style.css" />
+    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
+    <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css" />
+    <link type="text/css" rel="stylesheet" href="fonts/Helvetica/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
@@ -32,6 +32,7 @@
                                     <div class="humburher-menu"><i class="fas fa-bars"></i></div>
                                 </div>
                                 <nav class="nav-menu">
+                                    <div class="closed"><i class="fas fa-times"></i></div>
                                     <ul class="sub-menu">
                                         <li class="item-menu">
                                             <a href="#" class="link-item">
@@ -39,21 +40,18 @@
                                                     data-target="#about-modal1"> О МАГАЗИНЕ</button>
                                             </a>
                                         </li>
-
                                         <li class="item-menu">
                                             <a href="#" class="link-item">
                                                 <button type="button" class="link-item-btn" data-toggle="modal"
                                                     data-target="#about-modal2"> ДОСТАВКА</button>
                                             </a>
                                         </li>
-
                                         <li class="item-menu">
                                             <a href="#" class="link-item">
                                                 <button type="button" class="link-item-btn" data-toggle="modal"
                                                     data-target="#about-modal3">ГАРАНТИЯ</button>
                                             </a>
                                         </li>
-
                                         <li class="item-menu">
                                             <a href="#" class="link-item">
                                                 <button type="button" class="link-item-btn" data-toggle="modal"
@@ -61,7 +59,6 @@
                                                     ОТВЕТЫ</button>
                                             </a>
                                         </li>
-
                                         <li class="item-menu">
                                             <a href="#" class="link-item">
                                                 <button type="button" class="link-item-btn" data-toggle="modal"
@@ -72,7 +69,6 @@
                                     </ul>
                                 </nav>
                             </div>
-
 
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
@@ -89,7 +85,8 @@
                     </div>
                 </div>
             </header>
-            <section class="block1">
+            <!-- countdown1 -->
+            <section class="countdown_block1">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -100,10 +97,10 @@
                                     "МУЛЬТИКАРД" всего за 367руб.!</p>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="sale_box">
-                                <div class="sale_prise_new">1200 руб</div>
-                                <div class="sale_prise_old"><del>650 руб</del></div>
+                                <div class="sale_prise_old"><del>1200 руб</del></div>
+                                <div class="sale_prise_new">650 руб</div>
                             </div>
                             <div class="sale_box_img2">
                                 <img src="img/pic2_black_wallet.png" class="black-wallet" alt="black wallet">
@@ -112,15 +109,14 @@
                                 <img src="img/pic1_red_wallet.png" class="red-wallet" alt="red wallet">
                             </div>
                         </div>
-
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="Form-box">
                                 <div class="sale">Заказать сейчас по супер цене!</div>
                                 <div class="timer">
                                     <div id="countdown" class="countdown"></div>
                                 </div>
-                                <form action="#" method="POST">
-                                    <div class="form-parent-box">
+                                <form action="#" method="POST" class="form-parent-box">
+                                    <div class="form_box_child">
                                         <input type="text" equired placeholder="Ваше имя">
                                         <input type="text" equired placeholder="Ваш телефон">
                                         <input type="text" equired placeholder="Ваш e-mail">
@@ -129,25 +125,23 @@
                                         <input type="submit" value="Заказать">
                                     </div>
                                 </form>
-
                             </div>
-                            </form>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="block1_footer">
+            <section class="countdown_block1_bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h2>Кошёлек «МУЛЬТИКАРД» станет не только стильным аксессуаром для Вас, но и
                                 ценным, полезным подарком для Ваших родных и близких.</h2>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="block2">
+            <!-- multicard -->
+            <section class="multicard_block">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -161,7 +155,10 @@
                                     последних модных веяниях. С помощью кошелька модники и модницы дополняют свой образ
                                     и подчеркивают индивидуальность.</p>
                                 <div class="img_order">
-                                    <img src="img/order.png" alt="order">
+                                    <iframe width="460" height="300" src="https://www.youtube.com/embed/vm355syEf00"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                 </div>
                                 <p>Подчеркнуть стиль или добавить в него изюминку, акцентировать на себе внимание или
                                     казаться утонченным и классическим человеком – все это можно сделать с помощью
@@ -200,7 +197,8 @@
                     </div>
                 </div>
             </section>
-            <section class="block3">
+            <!-- about_product -->
+            <section class="about_product_block">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -244,71 +242,77 @@
                     </p>
                 </div>
             </div>
-            <section class="reviews">
+            <!-- reviews -->
+            <section class="reviews_block">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h2>Отзывы покупателей</h2>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="reviews_box_img">
-                                <img src="img/reviews_pic1.png" alt="">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="reviews-box_parent">
+                                <div class="reviews_box_img">
+                                    <img src="img/reviews_pic1.png" alt="">
+                                </div>
+
+                                <div class="reviews_box_text">
+                                    <h2>Владимир</h2>
+                                    <p>У меня уже был алюминиевый кошелек, моей девушке он понравился и я решил
+                                        порадовать
+                                        свою
+                                        девушку. Заказал ей кошелек алюминиевый красный, красивый, стильный! Девушка
+                                        в
+                                        восторге!
+                                        Хороший подарок друзьям и родным!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
-                            <div class="reviews_box_text">
-                                <h2>Владимир</h2>
-                                <p>У меня уже был алюминиевый кошелек, моей девушке он понравился и я решил порадовать
-                                    свою
-                                    девушку. Заказал ей кошелек алюминиевый красный, красивый, стильный! Девушка в
-                                    восторге!
-                                    Хороший подарок друзьям и родным!</p>
+                            <div class="reviews-box_parent">
+                                <div class="reviews_box_img">
+                                    <img src="img/reviews_pic2.png" alt="">
+                                </div>
+                                <div class="reviews_box_text">
+                                    <h2>Юлия</h2>
+                                    <p>У меня уже взрослые дети, они любят всякие новшества. Увидела в рекламе
+                                        алюминиевый
+                                        кошелек и купила своим детям в подарок. Уж очень они хороши эти кошельки!
+                                        Дети с
+                                        удовольствием пользуются. В кошелек вмещаются все используемые карты.
+                                        Вмещает
+                                        много,
+                                        места занимает мало!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="reviews_box_img">
-                                <img src="img/reviews_pic2.png" alt="">
+                            <div class="reviews-box_parent">
+                                <div class="reviews_box_img">
+                                    <img src="img/reviews_pic3.png" alt="">
+                                </div>
+                                <div class="reviews_box_text">
+                                    <h2>Михаил</h2>
+                                    <p>Купил себе алюминиевый кошелек, очень доволен! Легко помещается в кармане,
+                                        ничего
+                                        не
+                                        мнется. Все в надежности и всегда под рукой!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
-                            <div class="reviews_box_text">
-                                <h2>Юлия</h2>
-                                <p>У меня уже взрослые дети, они любят всякие новшества. Увидела в рекламе алюминиевый
-                                    кошелек и купила своим детям в подарок. Уж очень они хороши эти кошельки! Дети с
-                                    удовольствием пользуются. В кошелек вмещаются все используемые карты. Вмещает много,
-                                    места занимает мало!</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="reviews_box_img">
-                                <img src="img/reviews_pic3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
-                            <div class="reviews_box_text">
-                                <h2>Михаил</h2>
-                                <p>Купил себе алюминиевый кошелек, очень доволен! Легко помещается в кармане, ничего не
-                                    мнется. Все в надежности и всегда под рукой!</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="reviews_box_img">
-                                <img src="img/reviews_pic4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
-                            <div class="reviews_box_text">
-                                <h2>Елена</h2>
-                                <p>Заказывала мужу. Кошелек очень понравился и мужу, и мне! Практичный, удобный,
-                                    вместительный! Теперь и себе заказала. Замечательная вещь - кошелек алюминиевый,
-                                    красный
-                                    "МУЛЬТИКАРД" - как я и хотела!</p>
+                            <div class="reviews-box_parent">
+                                <div class="reviews_box_img">
+                                    <img src="img/reviews_pic4.png" alt="">
+                                </div>
+                                <div class="reviews_box_text">
+                                    <h2>Елена</h2>
+                                    <p>Заказывала мужу. Кошелек очень понравился и мужу, и мне! Практичный, удобный,
+                                        вместительный! Теперь и себе заказала. Замечательная вещь - кошелек
+                                        алюминиевый,
+                                        красный
+                                        "МУЛЬТИКАРД" - как я и хотела!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="block4">
+            <!-- countdown2 -->
+            <section class="countdown_block2">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -317,13 +321,12 @@
                                 <p>Внимание! Специальная цена!</p>
                                 <p>Успей заказать TD 0196 Кошелек алюминиевый, красный "МУЛЬТИКАРД" всего за 367 руб.!
                                 </p>
-
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="sale_box">
-                                <div class="sale_prise_new">1200 руб</div>
-                                <div class="sale_prise_old"><del>650 руб</del></div>
+                                <div class="sale_prise_old"><del>1200 руб</del></div>
+                                <div class="sale_prise_new">650 руб</div>
                             </div>
                             <div class="sale_box_img2">
                                 <img src="img/pic2_black_wallet.png" class="black-wallet" alt="black wallet">
@@ -332,16 +335,14 @@
                                 <img src="img/pic1_red_wallet.png" class="red-wallet" alt="red wallet">
                             </div>
                         </div>
-
-
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md- col-sm-12">
                             <div class="Form-box">
                                 <div class="sale">Заказать сейчас по супер цене!</div>
                                 <div class="timer">
                                     <div id="countdown2" class="countdown"></div>
                                 </div>
-                                <form action="#" method="POST">
-                                    <div class="form-parent-box">
+                                <form action="#" method="POST" class="form-parent-box">
+                                    <div class="form_box_child">
                                         <input type="text" equired placeholder="Ваше имя">
                                         <input type="text" equired placeholder="Ваш телефон">
                                         <input type="text" equired placeholder="Ваш e-mail">
@@ -356,17 +357,40 @@
                     </div>
                 </div>
             </section>
-
-
-
         </div>
-
-        <footer>
+        <!-- footer -->
+        <footer class="footer_bg">
             <div class="container">
-
+                <div class="privacy-policy">
+                    <nav class="menu-police">
+                        <ul class="about-menu">
+                            <li class="item-menu">
+                                <a href="#" class="link-item">
+                                    <button type="button" class="link-item-btn" data-toggle="modal"
+                                        data-target="#ModalMagazin6">
+                                        Политика конфиденциальности
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" class="link-item">
+                                    <button type="button" class="link-item-btn" data-toggle="modal"
+                                        data-target="#ModalMagazin7">
+                                        Партнерская программа
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-footer">
+                    <p>Срочную доставку осуществляет Новая Почта.</p>
+                    <p>Доставка оплачивается по тарифам Новой почты при получении</p>
+                </div>
             </div>
         </footer>
 
+        <!-- Модальные окна -->
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true" id="about-modal1">
@@ -606,6 +630,61 @@
                         </p> 8. Хорошие скидки и акции!</p>
 
                         </p> 9. Оформление заказа за 1 клик</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" id="ModalMagazin6">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Мы заботимся о вашей конфиденциальности</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Мы и наши партнёры используем файлы cookie для хранения и доступа к личным данным, например,
+                            данным о просмотрах, с целью предоставления и персонализации контента, рекламы и анализа
+                            трафика
+                            сайта. </p>
+                        <p> Вы можете узнать больше о целях, для которых мы и наши партнёры используем файлы cookie,
+                            или настроить ваши предпочтения, нажав кнопку «Настройки файлов cookie» ниже. </p>
+                        <p> Вы можете пересмотреть свои предпочтения и изменить их в любое время, перейдя по ссылке к
+                            настройкам
+                            файлов cookie в нашей Политике обработки файлов Cookie. Мы придерживаемся общего регламента,
+                            сообщая о ваших предпочтениях всем участвующим сайтам. Вы можете настроить параметры файлов
+                            cookie в настройках файлов cookie.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" id="ModalMagazin7">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Чем полезна партнерская программа?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Выгоды очевидны для каждого участника ПП.</p>
+
+                        <p> Владелец интернет-магазина получает сразу несколько выгод:</p>
+
+                        <p> можно привлекать новых покупателей, не вкладываясь в рекламу;</p>
+                        <p> соответственно, увеличивать продажи, оборот и прибыль;</p>
+                        <p> можно не тратиться на пиар - партнеры сделают это за вас. Благодаря ссылке о вашем ресурсе
+                            узнают многие, а пройдут на сайт те, кому это действительно интересно - то есть именно ваша
+                            целевая аудитория;</p>
+                        <p> комиссионные можно платить только после совершения целевого действия - покупки товара. Если
+                            человек прошел по ссылке на сайт, побродил, но ничего не купил - партнер останется без
+                            вознаграждения, а деньги останутся у вас.</p>
                     </div>
                 </div>
             </div>

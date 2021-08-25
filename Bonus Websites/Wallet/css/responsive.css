@@ -1,6 +1,6 @@
 @media (min-width: 1200px){
     .for_page .container {
-        max-width: 1020px;
+        max-width: 1001px;
     }
 }
 @media(max-width: 1199px){
@@ -15,54 +15,319 @@
     .nav-menu{
         display: none;
         position: fixed;
-        background: #fff;
+        background: #e2e2e2;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
-        padding: 40px;
+        padding: 20px;
+        z-index: 10;
     }
-    .nav-menu ul.sub-menu li a button{
-        font-size: 15px;
-        color:#333;
-        padding-bottom: 4px;
-    } 
-    .nav-menu ul.sub-menu{
+    .nav-menu ul.sub-menu li a button:hover {
+        color: #0664cf;
+    }
+    .nav-menu ul.sub-menu li a button {
+        font-size: 16px;
+        color: #900002;
+        padding-bottom: 6px;
+        font-weight: bold;
+    }
+    .nav-menu ul.sub-menu {
         display: block;
-    }
-
-    .responsive-menu{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
+        }
+        .responsive-menu {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
     .responsive-menu-name{
-        font-family: 'helveticaneuecyrlight';
-        font-size: 20px;
+        font-family: 'Conv_HelveticaNeueCyr-Roman';
+        font-size: 24px;
         color: #fff;
     }
     .humburher-menu i{
-        font-size: 20px;
         color: #fff;
+        font-size: 24px;
+        transition: 0.7;
         cursor: pointer;
     }
-    .humburher-menu i:hover{
-        color: ivory;
-
+    .nav-menu .closed{
+        display: block;
+        position: absolute;
+        right: 33px;
+        top: 20px;
     }
-	
+    .closed i{
+        cursor: pointer;
+        font-size: 24px;
+        transition: 0.7s;
+        }
+    .artical {
+        display: none;
+        }
+    .info {
+       margin-left: 0;
+    }
+    .countdown_block1 h2 {
+        font-size: 27px;
+        padding-top: 30px;
+    }
+    .text_special_offers p {
+        font-size: 15px;
+        margin-top: 16px;
+    }
+    .sale_box {
+        left: -10px;
+        top: 41px;
+    }
+    .sale_box_img2 .black-wallet {
+        left: 12px;
+        top: 55px;
+    }
+    .sale_box_img3 .red-wallet {
+        top: 234px;
+        left: -6px;
+    }
+    .sale {
+        font-size: 18px;
+    }
+    .countSeconds, 
+    .countDays, 
+    .countHours ,
+    .countMinutes {
+        width: 60px;
+        height: 60px;
+        padding: 7px;
+    }
+    .position {
+        font-size: 27px;
+        width: 12px;
+    }
+    .countSeconds p, 
+    .countDays p, 
+    .countMinutes p, 
+    .countHours p {
+        font-size: 14px;
+        padding-top: 2px;
+    }
+.form_box_child input {
+    font-size: 15px;
+    padding: 7px
+   }
+   .submit input {
+    padding: 5px;
+    font-size: 18px;
+}
+.Form-box {
+    width: 340px;
+    height: 362px;
+    margin-left: 0;
+}
+.sale_prise_new {
+    font-size: 18px;
+    padding-left: 9px
+}
+.sale_prise_old {
+    font-size: 13px;
+    padding-left: 6px;
+}
+.countdown_block1_bg h2 {
+    font-size: 18px;
+}
+.multicard_block h2 {
+    font-size: 24px;
+    margin: 26px 0 20px 0;
+}
+.multicard_block p {
+    font-size: 14px;
+}
+.about_product_block h2 {
+    padding-top: 25px;
+    font-size: 24px;
+}
+.list ul li {
+    font-size: 13px;
+    padding: 0 0 12px 8px;
+}
+.img_wallet {
+    margin: 40px 0  0 0;
+}
+.about_multicard p {
+    font-size: 13px;
+    padding: 26px 0 12px 0;
+}
+.reviews_block h2 {
+    font-size: 24px;
+    padding-top: 29px;
+}
+.reviews_block h2 {
+    font-size: 18px;
+    padding-top: 24px;
+}
+.reviews_box_text p {
+    font-size: 14px;
+}
+.countdown_block2 h2 {
+    font-size: 24px;
+    padding-top: 20px;
+}
+.sale_box_text p {
+    font-size: 16px;
+}
+.privacy-policy ul.about-menu {
+    padding-top: 30px;
+}
+.menu-police ul.about-menu li a button:focus, 
+.menu-police ul.about-menu li a button {
+    font-size: 20px;
+}
+.text-footer p {
+    font-size: 14px;
+} 
+.img_order iframe{
+    width: 330px;
+    height: 200px;
+}  
 }
 @media(max-width: 767px){
-	
+    .responsive-menu-name {
+        font-size: 20px;
+}
+.info .tel {
+    font-size: 14px;
+}
+.work-time {
+    font-size: 11px;
+}
+.countdown_block1 h2 {
+    font-size: 20px;
+}
+.text_special_offers p {
+    font-size: 12px;
+}
+.sale_box  {
+    display: none;
+}
+.sale_box_img2 {
+    display: none;
+}
+.sale_box_img3 {
+    display: none;
+}
+.Form-box {
+   margin: 0 auto;
+   margin-top: 10px;
+}
+.countdown_block1_bg h2 {
+    font-size: 15px;
+    padding: 30px 0 22px 27px;
+}
+.multicard_block p {
+    font-size: 13px;
+}
+.img_order iframe{
+    width: 100%;
+    height: 350px;
+} 
+.img_cards{
+    display: none;
+}
+.img_wallet{
+    display: none;
+}
+.reviews_block h2 {
+    font-size: 13px;
+    padding-top: 20px;
+}
+.reviews_box_text p {
+    font-size: 10px;
+}
+.countdown_block2 h2 {
+    font-size: 19px;
+}
+.sale_box_text p {
+    font-size: 12px;
+}
+.menu-police ul.about-menu li a button:focus, 
+.menu-police ul.about-menu li a button {
+    font-size: 17px;
+}
+.text-footer p {
+    font-size: 12px;
+}
 }
 @media(max-width: 600px){
-	
+.multicard_block h2 {
+    font-size: 20px;
+    margin: 19px 0 15px 0;
+}
+.about_product_block h2 {
+    font-size: 20px;
+}
+.about_multicard p {
+    font-size: 12px;
+    padding: 16px 0 4px 0;
+}	
 }
 @media(max-width: 500px){
+.text_special_offers p {
+    font-size: 11px;
+}
+.countdown_block1_bg h2 {
+    font-size: 14px;
+}
+.reviews_box_img img {
+    width: 100px;
+}
+.menu-police ul.about-menu li a button:focus, 
+.menu-police ul.about-menu li a button {
+    font-size: 15px;
+}
+.text_special_offers p {
+    font-size: 8px;
+}
+.countdown_block1_bg h2 {
+    font-size: 12px;
+}
+.about_product_block h2 {
+    font-size: 17px;
+}
 	
 }
 @media(max-width: 470px){
 	
 }
 @media(max-width: 400px){
+.countdown_block1 h2 {
+    font-size: 18px;
+}
+.countdown_block1_bg h2 {
+    font-size: 10px;
+}
+.about_multicard p {
+    font-size: 10px;
+    padding: 11px 0 4px 0;
+}
+.reviews_block h2 {
+    font-size: 11px;
+    padding-top: 20px;
+}
+.reviews_box_text p {
+    font-size: 8px;
+}
+.sale_box_text p {
+    font-size: 8px;
+}
+.menu-police ul.about-menu li a button:focus, 
+.menu-police ul.about-menu li a button {
+    font-size: 11px;
+}
+.img_order iframe {
+    width: 330px;
+    height: 200px;
+}
+.text-footer p {
+    font-size: 10px;
+}
+}
 	
