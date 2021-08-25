@@ -142,7 +142,7 @@ img{
     margin-bottom: 17px;
 }
 .list ul{
-    list-style-image: url(/img/img_ul.png);
+    list-style-image: url("../img/img_ul.png");
     margin: 20px 0 58px 20px;
 }
 .list ul li{
