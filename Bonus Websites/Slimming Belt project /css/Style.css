@@ -13,7 +13,189 @@ img{
 header{
 	padding: 35px 0;
 	background-color: #6e100b;
+    position: relative;
+    top: 0;
+    left: 0;
 }
+body, 
+html{
+    font-family: 'helveticaneuecyrlight';
+    font-size: 14px;
+}
+.responsive_navigation{
+    display: none;
+}
+.navigation_bar ul.menubar{
+    display: flex;
+}
+.navigation_bar ul.menubar li{
+    list-style: none;
+}
+.navigation_bar ul.menubar li a{
+    display: block;
+}
+.navigation_bar ul.menubar li a button{
+    padding-right: 16px;
+    font-family: 'helveticaneuecyrroman';
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.navigation_bar ul.menubar li:last-child a button{
+	padding-right: 0;
+}
+.navigation_bar ul.menubar li a button:focus,
+.navigation_bar ul.menubar li a button{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.navigation_bar ul.menubar li a button:hover{
+    color: #03b3fd;
+}
+.contact_parent{
+    display: flex;
+}
+.artical{
+    padding-top: 5px;
+    font-family: 'helveticaneuecyrroman';
+    font-size: 12px;
+    color: #f3c401;
+}
+.info_parent {
+    text-align: center;
+    line-height: 17px;
+}
+.info_parent .phone {
+    margin-left: 15px;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.4s;
+}
+.info_parent .time-tel{
+	font-family: 'helveticaneuecyrlight';
+	font-size: 14px;
+	color: #fff;
+}
+.info_parent .phone:hover {
+    text-decoration: none;
+    color: #03b3fd;
+}
+.block1_sale_box{
+    background-image: url('../img/newBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* убрать цвет! */
+}
+.main_info h1{
+    padding-top: 52px;
+    font-family: 'helveticaneuecyrlight';
+	font-size: 42px;
+}
+.main_info h2{
+    font-family: 'helveticaneuecyrblack';
+	font-size: 64px;
+    text-transform: uppercase;
+    color: #f3c401;
+    padding-bottom: 69px;
+}
+/* .parent_box_block1{
+    display: flex;
+}
+.parent_box_block1 ul.list{
+    content: "../img/";
+    display: block;
+    width: 60px;
+    height: 60px;
+} */
+
+/* здесь решить вопрос!!!!! */
+.form_counter{
+    padding-top: 30px;
+}
+.sale_prise_parent{
+    background-image: url('../img/RectangleForSale1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 32px 0 60px 168px;
+}
+.sale_prise_parent .sale_prise_new{
+    font-family: 'helveticaneuecyrbold';
+    font-size: 38px;
+    color: #fff;
+}
+.sale_prise_parent .sale_prise_old{
+    font-family: 'helveticaneuecyrlight';
+    font-size: 20px;
+    color: #fff;
+    padding-left: 25px;
+    line-height: 0.5;
+}
+.parent_form_box h2{
+    padding-top: 34px;
+    text-align: center;
+    font-family: 'helveticaneuecyrlight';
+    font-size: 25px;
+    color: #fff;
+}
+/* здесь решить вопрос!!!!! */
+#countdown {
+    display: flex;
+}
+#countdown .position {
+	font-family: 'helveticaneuecyrlight';
+	font-size: 99px;
+	color: #333;
+	display: inline-block; 
+    height: 47px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 19px;
+}
+.countdown .countSeconds,
+.countdown .countDays,
+.countdown  .countMinutes,
+.countdown  .countHours{
+	width: 77px;
+    height: 77px;
+	text-align: center;
+	padding: 2px;
+    display: block;
+}
+/* исправить здесь!!! */
+
+.countdown .countDays{
+    background: url("../img/RectangleForTime1.png") no-repeat;
+    background-size: contain;
+}
+.countdown .countHours{
+    background: url("../img/RectangleForTime2.png") no-repeat;
+    background-size: contain;
+}
+.countdown .countMinutes{
+    background: url("../img/RectangleForTime3.png") no-repeat;
+    background-size: contain;
+}
+.countdown .countSeconds{
+    background: url("../img/RectangleForTime4.png") no-repeat;
+    background-size: contain;
+}
+.timer .countSeconds p,
+.timer .countDays p,
+.timer .countMinutes p,
+.timer .countHours p{
+    font-family: 'helveticaneuecyrroman';
+	font-size: 16px;
+	color: #230000;
+	margin: 0;
+	padding: 5px;
+}
+
 
 
 
