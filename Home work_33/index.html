@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homw work 33</title>
+</head>
+<style>
+    .img {
+        background: url("../img/mops1.png") no-repeat;
+        height: 400px;
+        width: 600px;
+    }
+
+    .img:hover {
+        background: url("../img/mops2.png") no-repeat;
+        height: 400px;
+        width: 600px;
+    }
+</style>
+
+<body>
+    <div class="img"></div>
+    <img src="img/mops1.png" alt="mops1" title="mops" id="mops1">
+</body>
+<script>
+    mops1.onmouseover = function () {
+        this.src = "img/mops2.png";
+        this.alt = this.title = 'mops the best';
+    }
+    mops1.onmouseout = function () {
+        this.src = "img/mops3.png";
+        this.alt = this.title = 'mops is funny dog';
+    }
+</script>
+
+</html>
