@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 35</title>
+</head>
+<body>
+</body>
+<script>
+    // 1) Cоздать объект человека, преобразовать в json(JSON вывести в консоль)
+    let myFriend = {
+        name: "Darya",
+        lastName: "Sakhno",
+        age: 33,
+        work: true,
+        dateOfBirth: {
+            day: 17,
+            month: "September",
+            year: 1987
+        }
+    }
+    console.log(JSON.stringify(myFriend));
+
+    // 2) json преобразовать в объект и выводим в документ
+    let jsonStr = '{"name":"Darya","lastName":"Sakhno","age":33,"work":true,"dateOfBirth":{"day":17,"month":"September","year":1987}}';
+    let myJSON = JSON.parse(jsonStr);
+    document.write("name" + " : " + myJSON.name + "</br>" + "lastName" + " : " + myJSON.lastName + "</br>" + "age" + " : " + myJSON.age + "</br>" + "work" + " : " + myJSON.work + "</br>" + "dateOfBirth" + " : " + myJSON.dateOfBirth["day"] + " " + myJSON.dateOfBirth["month"] + " " + myJSON.dateOfBirth["year"]);
+
+</script>
+
+</html>
