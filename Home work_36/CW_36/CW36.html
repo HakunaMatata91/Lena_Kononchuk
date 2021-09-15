@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <a href="#" class="menu-btn">Обратный звонок</a>
+            <form class="menu-list">
+                <input type="name" name="name" placeholder="Ваше имя *" required><br>
+                <input type="number" id="phone" name="phone" placeholder="Ваш телефон *" required><br>
+                <input type="text" id="date" name="trip-start" placeholder="Желаемая дата приема" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    $("document").ready(function () {
+        $('.menu-btn').on('click', function (e) {
+
+            $('.menu').toggleClass('menu_active');
+
+        })
+        date.onmouseover = function () {
+            this.placeholder = "dd/mm/yyyy";
+        }
+        date.onmouseout = function () {
+            this.placeholder = "Желаемая дата приема";
+        }
+
+        phone.onmouseover = function () {
+            this.placeholder = "+38 (___) ___-____";
+        }
+        phone.onmouseout = function () {
+            this.placeholder = "Ваш телефон *";
+        }
+
+    });
+</script>
+
+</html>
