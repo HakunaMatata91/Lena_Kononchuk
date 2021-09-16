@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 37</title>
+</head>
+
+<body>
+    <h1>Регулярное</h1>
+    <h2>выражение</h2>
+    <h3>представляет</h3>
+    <h4>собой</h4>
+    <h5>последовательность</h5>
+    <h6>символов</h6>
+</body>
+<script>
+    // ПЕРВОЕ ЗАДАНИЕ НЕ ПОНЯЛА КАК ВЫПОЛНИТЬ
+    // let headings = document.getElementsByTagName('h');
+    // let patternOne = /<h([1-6]).*>.*<\/h/;
+    // console.log(headings.ma(patternOne));
+
+    //2) Remove the domain name through regular expressions
+    let link = '<a href="https://oxford-med.com.ua/services/stomatology/, https://medikom.com.ua/ru/terapiya-kiev/#Terapiya, https://www.dobrobut.com/uslugi/c-konsultacia-terapevta, https://complex-dent.com.ua/uslugi/detskaya-stomatologiya, https://complex-dent.com.ua/uslugi/parodontolgiya, https://complex-dent.com.ua/uslugi/plazmolifting-v-stomatologii"></a>';
+    let patternTwo = /https.\/\/\w+.\w+.\w+.\w+/gm;
+    console.log(link.replace(patternTwo, " "));
+</script>
+
+</html>
