@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <title>Home work 36</title>
+</head>
+
+<body>
+    <main class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="parent_img">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="contact_parent">
+                    <div class="social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>г. Киев, ЖК «Парковые озера» ул. Воскресенская 12б</p>
+                    </div>
+                    <div class="contacts">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+38(068)-50-40-659" class="telephone">+38(068)-50-40-659</a>
+                        <a href="tel:+38(073)-50-40-659" class="telephone">+38(073)-50-40-659</a>
+                        <a href="tel:+38(050)-92-52-961" class="telephone">+38(050)-92-52-961</a>
+                    </div>
+                    <div class="schedule">
+                        <div class="time">Пн-Сб с 09:00 до 20:00</div>
+                        <div class="time">Вс с 09:00 до 18:00</div>
+                    </div>
+                    <div class="btn"><button>запись</button></div>
+
+                </div>
+                <div class="clear"></div>
+                <div class="wraper_modal">
+                    <div class="popup">
+                        <span class="close">x</span>
+                        <h4>Записаться на прием</h4>
+                        <hr class="hr-line">
+                        <form id="form" name="form">
+                            <input type="text" name="name" class="input" id="name" placeholder="Ваше Имя *" required>
+                            <input type="number" id="phone" name="phone" placeholder="Ваш Телефон *" required>
+                            <input type="text" id="date" name="trip-start" placeholder="Желаемая дата приема" required>
+                            <label class="label">Уточнить детали</label>
+                            <textarea class="text" name="textarea" 
+                                placeholder="Ваше Сообщение"></textarea>
+                            <button type="button" class="button">Отправить</button>
+                        </form>
+
+                    </div>
+                </div>
+            </header>
+            <section class="bg_block">
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
