@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #bg_popup {
+        position: fixed;
+        z-index: 99999;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+
+    #popup {
+        background: #fff;
+        width: 350px;
+        margin: 25% auto;
+        padding: 5px 20px;
+        position: relative;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        color: #555;
+        background: #1BA600;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="bg_popup">
+        <div id="popup">
+            <a id="setCookie" class="close" href="#" title="Закрыть"
+                onclick="document.getElementById('bg_popup').style.display='none'; return false;">X</a>
+            <h1>Пример</h1>
+            <p>Модальное окно с задержкой в 4 секунды, которое появляется раз в сутки.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#setCookie").click(function () {
+            $.cookie("popup", "", {
+                expires: 0,
+                path: '/'
+            });
+            $("#bg_popup").hide();
+        });
+
+        if ($.cookie("popup") == null) {
+            setTimeout(function () {
+                $("#bg_popup").show();
+            }, 4000)
+        } else {
+            $("#bg_popup").hide();
+        }
+    });
+</script>
+
+</html>

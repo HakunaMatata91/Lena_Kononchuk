@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work If/else</title>
+    <style>
+        td select,
+        td input {
+            width: 150px;
+        }
+
+        #diagram td {
+            vertical-align: bottom;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #diagram div {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td>amount:</td>
+                <td>
+                    <input name="money" type="number" value="10000" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of years:</td>
+                <td>
+                    <select name="months">
+                        <option value="12" selected>12 (год)</option>
+                        <option value="18">18 (1.5 года)</option>
+                        <option value="24">24 (2 года)</option>
+                        <option value="36">36 (3 года)</option>
+                        <option value="60">60 (5 лет)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Percentage of year:</td>
+                <td>
+                    <input name="interest" type="number" value="5" required>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table id="diagram">
+        <tr>
+            <th>Total profit: </th>
+            <th>Станет:</th>
+        </tr>
+        <tr>
+            <th id="money-before"></th>
+            <th id="money-after"></th>
+        </tr>
+        <td>
+            <div style="background: red;width:40px;height:100px"></div>
+        </td>
+        <td>
+            <div style="background: green;width:40px;height:0" id="height-after"></div>
+        </td>
+    </table>
+</body>
+<script>
+    let form = document.forms.calculator;
+
+function CalculateProfit(initial, years, percent){
+    if(initial < 1000){
+        alert("Too small initial deposit. Should be more than 1000");
+        return;
+    }
+    let totalResult = initial;
+
+    for(let year = 0; year < years; year ++){
+        let perYearProfit = totalResult * percent; //by persents
+        totalResult = totalResult + perYearProfit;
+    }
+    //alert(`You'll get ${result} money after ${years} years`);
+    return totalResult;
+}
+
+function dataVisualization() {
+    // получим данные
+    let initial = +form.money.value;          // преобразуем в число
+    if (!initial) return;
+    if(initial < 1000){
+        alert("Too small initial deposit. Should be more than 1000");
+    }
+    let interest = form.interest.value / 100; // преобразуем в число
+    if (!interest) return;
+    let years = form.months.value / 12;       // преобразуем в число
+    if (!years) return;
+    
+    // произведем вычисление
+    //let result = Math.round(initial * (1 + interest * years)/10);
+    //let result = initial + initial*interest; // for one year
+
+    let result = CalculateProfit(initial, years, interest);
+    // отобразим результат
+    window["money-before"].innerHTML = initial;
+    window["money-after"].innerHTML = result;
+    window["height-after"].style.height = Math.round(100 * (1 + interest * years)) + "px";
+}
+
+form.money.addEventListener("input", dataVisualization);
+form.months.addEventListener("input", dataVisualization);   // можно и при событии change
+form.interest.addEventListener("input", dataVisualization);
+
+dataVisualization();
+
+// let initialInput = prompt("Please input initial amount of money:", "1000");
+// let yearsInput = prompt("Please input deposit duration in years:", "1");
+// let percentInput = prompt("Please input deposit persents", "5");
+
+// let result =  CalculateProfit(initialInput, yearsInput, percentInput);
+// function CalculateProfit(initial, years, percent){
+//     if(initial < 1000){
+//         alert("Too small initial deposit. Should be more than 1000");
+//         return;
+//     }
+//     let totalResult = initial;
+
+//     for(let year = 0; year < years; year ++){
+//         let perYearProfit = totalResult * percent; //by persents
+//         totalResult = totalResult + perYearProfit;
+//     }
+//     //alert(`You'll get ${result} money after ${years} years`);
+//     return totalResult;
+// }
+
+    // // 1) Получить максимальное число и вывести через prompt( "<" ">" - через alert вывести ошибку
+    // let maxSum = Math.max(10, 36, 66, 99, 44);
+    // let sum = prompt('Enter your number here', '');
+
+    // if (sum == maxSum) {
+    //     alert('This is right number');
+    // } else if (sum >= maxSum) {
+    //     alert('Are too few, try again');
+    // } else if (sum <= maxSum) {
+    //     alert('Too much, try again');
+    // }
+
+
+    // // 2) Switch: case 5 цветов, правильный цвет alert(верно), если цвета нет, то alert(Цвета нет).
+
+    // let color = prompt('Select', '');
+
+    // switch (color) {
+    //     case 'Orange':
+    //         alert('Orange, this is right color');
+    //         break;
+
+    //     case 'Purple':
+    //         alert('Purple, this is right color');
+    //         break;
+
+    //     case 'Magenta':
+    //         alert('Magenta, this is right color');
+    //         break;
+
+    //     case 'Beige':
+    //         alert('Beige, this is right color');
+    //         break;
+
+    //     case 'Mahogany':
+    //         alert('Mahogany, this is right color');
+    //         break;
+
+    //     default:
+    //         alert('No color definition, try again');
+    // }
+    // // 3) 5 вывести через if/else
+
+    // let color2 = prompt("Select a color", "");
+
+    // if (color2 == 'Orange') {
+    //     alert('Orange, this is right color');
+    // } else if (color2 == 'Purple') {
+    //     alert('Purple, this is right color');
+    // } else if (color2 == 'Magenta') {
+    //     alert('Magenta, this is right color');
+    // } else if (color2 == 'Beige') {
+    //     alert('Beige, this is right color');
+    // } else if (color2 == 'Mahogany') {
+    //     alert('Mahogany, this is right color');
+    // } else {
+    //     alert('No color definition, try again');
+    // }
+</script>
+
+</html>

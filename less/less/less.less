@@ -1,0 +1,53 @@
+@blueColor : #20dbd8; // переменная 
+@padding : 5px;
+.header{
+    background: @blueColor;
+    .border_top_bottom;
+}
+.aside{
+    background: @blueColor;
+}
+.sidebar a{
+    border-bottom: solid 1px @blueColor;
+}
+h1{
+    padding: @padding;
+}
+.border_top_bottom{
+    border-top: solid 2px #192414;
+    border-bottom: solid 2px #192414;
+}
+.main_body{
+    .border_top_bottom;
+}
+.border-radius(@radius:5px){ // функция
+    border-radius:@radius;
+    -moz-border-radius:@radius;
+    -webkit-border-radius:@radius;
+}
+.button{
+    .border-radius(20px); // вызов функции с изменением значения
+    padding: (@padding*2);
+
+}
+.nav-menu { // вложения 
+    background: #00fbff;
+    ul{
+        display: flex;
+       
+        li{
+            list-style: none;
+            a{
+                padding-right: 20px;
+                font-size: 15px;
+                text-decoration: none;
+                color: #fff;
+                transition: 0.3s;
+                &:hover{
+                    color: gold;
+
+                }
+            }
+        }
+    }
+}
