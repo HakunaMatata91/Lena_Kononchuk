@@ -1,0 +1,50 @@
+.header {
+  background: #20dbd8;
+  border-top: solid 2px #192414;
+  border-bottom: solid 2px #192414;
+}
+.aside {
+  background: #20dbd8;
+}
+.sidebar a {
+  border-bottom: solid 1px #20dbd8;
+}
+h1 {
+  padding: 5px;
+}
+.border_top_bottom {
+  border-top: solid 2px #192414;
+  border-bottom: solid 2px #192414;
+}
+.main_body {
+  border-top: solid 2px #192414;
+  border-bottom: solid 2px #192414;
+}
+.button {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 10px;
+}
+.nav-menu {
+  background: #00fbff;
+}
+.nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav-menu ul li {
+  list-style: none;
+}
+.nav-menu ul li a {
+  padding-right: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav-menu ul li a:hover {
+  color: gold;
+}
