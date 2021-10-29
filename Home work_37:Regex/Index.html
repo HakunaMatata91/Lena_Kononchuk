@@ -9,22 +9,9 @@
 </head>
 
 <body>
-    <div class="regex_box">
-        <h1>Регулярное</h1>
-        <h2>выражение</h2>
-        <h3>представляет</h3>
-        <h4>собой</h4>
-        <h5>последовательность</h5>
-        <h6>символов</h6>
-    </div>
 </body>
 <script>
-    // ПЕРВОЕ ЗАДАНИЕ НЕ ПОНЯЛА КАК ВЫПОЛНИТЬ
-    let headings = document.querySelectorAll('.regex_box');
-    let pattern = /<h([1-6]).*>.*<\/h>/gm;
-    console.log(headings.match(pattern));
-
-    //2) Remove the domain name through regular expressions
+    // Remove the domain name through regular expressions
     let link = '<a href="https://oxford-med.com.ua/services/stomatology/, https://medikom.com.ua/ru/terapiya-kiev/#Terapiya, https://www.dobrobut.com/uslugi/c-konsultacia-terapevta, https://complex-dent.com.ua/uslugi/detskaya-stomatologiya, https://complex-dent.com.ua/uslugi/parodontolgiya, https://complex-dent.com.ua/uslugi/plazmolifting-v-stomatologii"></a>';
     let patternTwo = /https.\/\/\w+.\w+.\w+.\w+/gm;
     console.log(link.replace(patternTwo, " "));
