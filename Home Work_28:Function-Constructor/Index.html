@@ -11,10 +11,6 @@
 <body>
 </body>
 <script>
-    
-// 1) Создать конструктор функции в которой будет:
-// - 5 свойств с передачей аргумента параметра функции	
-// - вывести все данные в документ	
 
     let Hero = function (name, game, occupation, hairColor, eyeColor) {
         this.name = name;
@@ -28,7 +24,6 @@
             return 'Я в восторге от' + " " + this.name + "," + "  " + 'она главная героиня игры' + " " + this.game + "," + " " + 'она' + " " + this.occupation + "." + " " + 'У неё' + " " + this.hairColor + " " + 'цвет волос' + " " + 'и' + " " + this.eyeColor + " " + 'цвет глаз.' + '</br>';
         };
     };
-// 2)Создать два разных объекта и передавать один и тот же параметр из 5 
     let Aloy = new Hero('Элой', 'Horizon', ' охотница на машин', 'рыжий', 'зеленый');
     document.write(Aloy.gameCharacters());
 

@@ -9,7 +9,7 @@
 </head>
 <style>
     .text1 {
-    
+
         width: 600px;
         margin: 0 auto;
         text-align: center;
@@ -32,13 +32,9 @@
 </style>
 
 <body>
+    <!-- // Создать кнопку 'Show more',  при нажатии открывается параграф и кнопка меняет название на 'Show less' при нажатии на которую параграф скрывается -->
     <div class="text1">
         <p>
-            <span id="text1-start">Horizon Zero Dawn — компьютерная игра в жанре Action/RPG с открытым миром,
-                разработанная нидерландской студией Guerrilla Games и изданная Sony Interactive Entertainment для
-                игровой консоли PlayStation 4 в 2017 году; версия игры для Windows вышла 7 августа 2020 года[3].
-                Действие Horizon Zero Dawn происходит в постапокалиптическом мире, захваченном роботами; немногие люди
-                живут в первобытных племенах. </span>
             <span id="text1-end" style="display: none;">Игра стала первой игрой Guerrilla Games за много лет, не
                 относящейся к серии Killzone; концепция игры, придуманная арт-директором студии Жан-Бартом ван Бееком,
                 считалась чрезвычайно рискованной, но всё же была принята в разработку. Horizon Zero Dawn использует
@@ -52,7 +48,7 @@
     </div>
 </body>
 <script>
-    // var bt1 = 
+  // Создать кнопку 'Show more',  при нажатии открывается параграф и кнопка меняет название на 'Show less' при нажатии на которую параграф скрывается
     function toggleVisibility(id) {
         const element = document.getElementById(id);
         const display = element.style.display;
